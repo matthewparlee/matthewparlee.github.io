@@ -12,7 +12,7 @@ const Footer = () => (
         <Link to="/case-studies" className="text-sm text-muted-foreground transition-colors hover:text-foreground">Case Studies</Link>
         <Link to="/contact" className="text-sm text-muted-foreground transition-colors hover:text-foreground">Contact</Link>
         <a
-          href="https://www.linkedin.com/in/matthew-parlee"
+          href="https://www.linkedin.com/in/matthew-parlee-a7bb27120"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn profile"
