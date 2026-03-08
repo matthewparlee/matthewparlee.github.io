@@ -110,19 +110,25 @@ const Contact = () => {
               <h2 className="font-sans text-sm font-bold uppercase tracking-wide text-muted-foreground">Connect</h2>
               <div className="mt-4 flex flex-col gap-3">
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/matthew-parlee"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-sm font-medium text-foreground hover:text-primary transition-colors"
                 >
                   <Linkedin className="h-4 w-4" /> LinkedIn Profile
                 </a>
+                <a
+                  href="mailto:mcparlee@gmail.com"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-foreground hover:text-primary transition-colors"
+                >
+                  <Send className="h-4 w-4" /> mcparlee@gmail.com
+                </a>
               </div>
             </div>
             <div className="rounded-xl border bg-card p-6">
               <h2 className="font-sans text-sm font-bold uppercase tracking-wide text-muted-foreground">Resume</h2>
               <Button variant="outline" className="mt-4 w-full gap-2" asChild>
-                <a href="#" download>
+                <a href="/Matthew_Parlee_Resume.docx" download>
                   <FileDown className="h-4 w-4" /> Download Resume
                 </a>
               </Button>
