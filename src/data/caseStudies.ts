@@ -7,8 +7,7 @@ export interface CaseStudy {
   overview: string;
   problem: string;
   solution: string;
-  process: { phase: string; description: string }[];
-  images: { src: string; alt: string; caption: string }[];
+  process: { phase: string; description: string; image?: { src: string; alt: string; caption: string } }[];
   results: { metrics: string[]; quote?: string; quoteAuthor?: string };
 }
 
@@ -24,15 +23,10 @@ export const caseStudies: CaseStudy[] = [
     solution: "Designed a 30-day blended learning journey combining self-paced e-learning modules, virtual instructor-led sessions, on-the-job practice activities, and a peer mentoring framework. Applied spaced repetition and scenario-based assessments to reinforce critical knowledge.",
     process: [
       { phase: "Analysis", description: "Conducted stakeholder interviews with 12 department heads and surveyed 200+ recent hires to identify critical knowledge gaps and pain points in the existing program." },
-      { phase: "Design", description: "Created a learning architecture map, defined measurable objectives using Bloom's Taxonomy, and developed detailed storyboards for 8 interactive modules." },
-      { phase: "Development", description: "Built modules in Articulate Storyline 360 with branching scenarios, knowledge checks, and multimedia elements. Developed facilitator guides for virtual sessions." },
-      { phase: "Implementation", description: "Piloted with 50 new hires across 3 departments, gathered feedback through daily pulse surveys, and iterated on content based on learner analytics." },
+      { phase: "Design", description: "Created a learning architecture map, defined measurable objectives using Bloom's Taxonomy, and developed detailed storyboards for 8 interactive modules.", image: { src: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80", alt: "Storyboard layout for onboarding module", caption: "Detailed storyboard showing learner flow and decision points" } },
+      { phase: "Development", description: "Built modules in Articulate Storyline 360 with branching scenarios, knowledge checks, and multimedia elements. Developed facilitator guides for virtual sessions.", image: { src: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80", alt: "E-learning module interface showing interactive scenario", caption: "Interactive branching scenario in Module 3: Customer Communication" } },
+      { phase: "Implementation", description: "Piloted with 50 new hires across 3 departments, gathered feedback through daily pulse surveys, and iterated on content based on learner analytics.", image: { src: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80", alt: "Team collaboration during design phase", caption: "Collaborative design session with SMEs and stakeholders" } },
       { phase: "Evaluation", description: "Measured impact using Kirkpatrick's Four Levels. Tracked completion rates, assessment scores, manager satisfaction, and time-to-productivity metrics." },
-    ],
-    images: [
-      { src: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80", alt: "E-learning module interface showing interactive scenario", caption: "Interactive branching scenario in Module 3: Customer Communication" },
-      { src: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80", alt: "Storyboard layout for onboarding module", caption: "Detailed storyboard showing learner flow and decision points" },
-      { src: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80", alt: "Team collaboration during design phase", caption: "Collaborative design session with SMEs and stakeholders" },
     ],
     results: {
       metrics: [
@@ -56,14 +50,10 @@ export const caseStudies: CaseStudy[] = [
     solution: "Developed a gamified learning experience using scenario-based challenges, point systems, team leaderboards, and real-world case studies from the healthcare industry. Content was chunked into 10-minute mobile-friendly microlearning modules.",
     process: [
       { phase: "Analysis", description: "Reviewed compliance incident reports and interviewed compliance officers to identify the highest-risk knowledge areas and common violations." },
-      { phase: "Design", description: "Mapped game mechanics to learning objectives. Designed a badge and achievement system tied to competency milestones. Created scenario scripts based on real incidents." },
-      { phase: "Development", description: "Built in Articulate Rise with custom JavaScript for gamification elements. Developed a companion mobile app for push notifications and microlearning delivery." },
+      { phase: "Design", description: "Mapped game mechanics to learning objectives. Designed a badge and achievement system tied to competency milestones. Created scenario scripts based on real incidents.", image: { src: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&q=80", alt: "Gamified learning dashboard showing progress and badges", caption: "Learner dashboard with achievement badges and progress tracking" } },
+      { phase: "Development", description: "Built in Articulate Rise with custom JavaScript for gamification elements. Developed a companion mobile app for push notifications and microlearning delivery.", image: { src: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&q=80", alt: "Mobile learning interface", caption: "Mobile-optimized microlearning module on compliance scenarios" } },
       { phase: "Implementation", description: "Launched in phases by facility. Trained compliance champions at each site to support rollout and drive engagement through team challenges." },
       { phase: "Evaluation", description: "Tracked engagement analytics, completion rates, assessment scores, and compliance incident rates over 12 months post-launch." },
-    ],
-    images: [
-      { src: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&q=80", alt: "Gamified learning dashboard showing progress and badges", caption: "Learner dashboard with achievement badges and progress tracking" },
-      { src: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&q=80", alt: "Mobile learning interface", caption: "Mobile-optimized microlearning module on compliance scenarios" },
     ],
     results: {
       metrics: [
@@ -87,14 +77,10 @@ export const caseStudies: CaseStudy[] = [
     solution: "Designed a searchable digital job aid system with interactive decision trees for objection handling, competitive battle cards, and step-by-step demo guides. All resources were accessible within the CRM workflow to minimize context-switching.",
     process: [
       { phase: "Analysis", description: "Shadowed top-performing reps, analyzed CRM data for common deal blockers, and conducted a content audit of existing sales collateral to identify gaps." },
-      { phase: "Design", description: "Created information architecture for the job aid system. Designed templates for battle cards, objection handlers, and demo scripts using cognitive load principles." },
-      { phase: "Development", description: "Built interactive HTML5 job aids with search functionality. Integrated with Salesforce for in-workflow access. Created video micro-demos for complex product features." },
+      { phase: "Design", description: "Created information architecture for the job aid system. Designed templates for battle cards, objection handlers, and demo scripts using cognitive load principles.", image: { src: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&q=80", alt: "Sales battle card template design", caption: "Competitive battle card template with quick-reference format" } },
+      { phase: "Development", description: "Built interactive HTML5 job aids with search functionality. Integrated with Salesforce for in-workflow access. Created video micro-demos for complex product features.", image: { src: "https://images.unsplash.com/photo-1553028826-f4804a6dba3b?w=800&q=80", alt: "Interactive decision tree for objection handling", caption: "Interactive objection handling decision tree" } },
       { phase: "Implementation", description: "Rolled out with a 'train-the-trainer' model. Sales managers led adoption in team meetings. Established a feedback loop for continuous content updates." },
       { phase: "Evaluation", description: "Measured impact on search time, win rates, ramp time for new reps, and rep confidence scores through quarterly surveys." },
-    ],
-    images: [
-      { src: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&q=80", alt: "Sales battle card template design", caption: "Competitive battle card template with quick-reference format" },
-      { src: "https://images.unsplash.com/photo-1553028826-f4804a6dba3b?w=800&q=80", alt: "Interactive decision tree for objection handling", caption: "Interactive objection handling decision tree" },
     ],
     results: {
       metrics: [
@@ -118,14 +104,10 @@ export const caseStudies: CaseStudy[] = [
     solution: "Designed a 12-week cohort-based journey blending bi-weekly virtual workshops with structured peer coaching, reflective journaling, and real-world application projects. Each module focused on a specific competency: coaching conversations, feedback delivery, psychological safety, and strategic thinking.",
     process: [
       { phase: "Analysis", description: "Analyzed engagement survey data, conducted focus groups with direct reports, and benchmarked against leadership competency frameworks from CCL and DDI." },
-      { phase: "Design", description: "Built a competency-based curriculum map with progressive complexity. Designed experiential activities, case studies, and reflection prompts for each session." },
-      { phase: "Development", description: "Created facilitator guides, participant workbooks, peer coaching protocols, and a digital learning community space. Developed pre-work videos and post-session application challenges." },
+      { phase: "Design", description: "Built a competency-based curriculum map with progressive complexity. Designed experiential activities, case studies, and reflection prompts for each session.", image: { src: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=800&q=80", alt: "Virtual workshop session with breakout activities", caption: "Live virtual workshop with structured breakout discussions" } },
+      { phase: "Development", description: "Created facilitator guides, participant workbooks, peer coaching protocols, and a digital learning community space. Developed pre-work videos and post-session application challenges.", image: { src: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&q=80", alt: "Participant workbook and reflection journal", caption: "Participant workbook with guided reflection prompts" } },
       { phase: "Implementation", description: "Launched with a pilot cohort of 24 managers. Facilitated bi-weekly live sessions and monitored peer coaching circle engagement. Adjusted pacing based on participant feedback." },
       { phase: "Evaluation", description: "Used 360-degree assessments pre- and post-program, tracked engagement survey scores for participants' teams, and measured application of skills through manager observation rubrics." },
-    ],
-    images: [
-      { src: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=800&q=80", alt: "Virtual workshop session with breakout activities", caption: "Live virtual workshop with structured breakout discussions" },
-      { src: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&q=80", alt: "Participant workbook and reflection journal", caption: "Participant workbook with guided reflection prompts" },
     ],
     results: {
       metrics: [
