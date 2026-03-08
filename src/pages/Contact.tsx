@@ -110,7 +110,7 @@ const Contact = () => {
               <h2 className="font-sans text-sm font-bold uppercase tracking-wide text-muted-foreground">Connect</h2>
               <div className="mt-4 flex flex-col gap-3">
                 <a
-                  href="https://www.linkedin.com/in/matthew-parlee"
+                  href="https://www.linkedin.com/in/matthew-parlee-a7bb27120"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-sm font-medium text-foreground hover:text-primary transition-colors"
