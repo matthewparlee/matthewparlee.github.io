@@ -37,7 +37,7 @@ const Index = () => {
             custom={1}
             variants={fadeUp}
           >
-            I design learning experiences that solve real business problems — grounded in research, driven by data, and built for impact.
+            I craft customized learning experiences that solve real business problems — spanning energy, telecommunications, finance, insurance, and education.
           </motion.p>
           <motion.div initial="hidden" animate="visible" custom={2} variants={fadeUp} className="mt-10">
             <Button asChild size="lg" className="gap-2 rounded-full px-8">
