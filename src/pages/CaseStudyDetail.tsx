@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight, ChevronRight, Quote } from "lucide-react";
@@ -20,6 +20,13 @@ const CaseStudyDetail = () => {
   const index = caseStudies.findIndex((cs) => cs.id === id);
   const cs = caseStudies[index];
 
+  const processImages = useMemo(() => {
+    if (!cs) return [];
+    return cs.process
+      .filter((s) => s.image)
+      .map((s) => s.image!);
+  }, [cs]);
+
   if (!cs) {
     return (
       <main className="flex min-h-[60vh] items-center justify-center">
@@ -35,6 +42,14 @@ const CaseStudyDetail = () => {
 
   const prev = index > 0 ? caseStudies[index - 1] : null;
   const next = index < caseStudies.length - 1 ? caseStudies[index + 1] : null;
+
+  const openLightboxForStep = (step: typeof cs.process[number]) => {
+    const imgIndex = processImages.findIndex((img) => img.src === step.image?.src);
+    if (imgIndex >= 0) {
+      setLightboxIndex(imgIndex);
+      setLightboxOpen(true);
+    }
+  };
 
   return (
     <main className="py-16 sm:py-24">
@@ -90,42 +105,34 @@ const CaseStudyDetail = () => {
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border-2 border-primary bg-background text-sm font-bold text-primary">
                   {i + 1}
                 </div>
-                <div className="pt-1">
+                <div className="flex-1 pt-1">
                   <h3 className="font-sans text-lg font-bold text-foreground">{step.phase}</h3>
                   <p className="mt-1 leading-relaxed text-muted-foreground">{step.description}</p>
+                  {step.image && (
+                    <button
+                      onClick={() => openLightboxForStep(step)}
+                      className="group mt-4 overflow-hidden rounded-lg border focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                      aria-label={`View ${step.image.alt} in full resolution`}
+                    >
+                      <div className="aspect-[16/9] max-w-md overflow-hidden">
+                        <img
+                          src={step.image.src}
+                          alt={step.image.alt}
+                          className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                          loading="lazy"
+                        />
+                      </div>
+                      <p className="p-3 text-left text-xs text-muted-foreground">{step.image.caption}</p>
+                    </button>
+                  )}
                 </div>
               </div>
             ))}
           </div>
         </motion.section>
 
-        {/* Visual Evidence */}
-        <motion.section className="mt-16" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} aria-labelledby="evidence">
-          <h2 id="evidence" className="font-serif text-2xl text-foreground sm:text-3xl">Visual Evidence</h2>
-          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {cs.images.map((img, i) => (
-              <button
-                key={i}
-                onClick={() => { setLightboxIndex(i); setLightboxOpen(true); }}
-                className="group overflow-hidden rounded-lg border focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-                aria-label={`View ${img.alt} in full resolution`}
-              >
-                <div className="aspect-[4/3] overflow-hidden">
-                  <img
-                    src={img.src}
-                    alt={img.alt}
-                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                    loading="lazy"
-                  />
-                </div>
-                <p className="p-3 text-left text-xs text-muted-foreground">{img.caption}</p>
-              </button>
-            ))}
-          </div>
-        </motion.section>
-
         <Lightbox
-          images={cs.images}
+          images={processImages}
           currentIndex={lightboxIndex}
           open={lightboxOpen}
           onOpenChange={setLightboxOpen}
