@@ -18,7 +18,7 @@ const Navigation = () => {
     <header className="sticky top-0 z-40 border-b bg-background/90 backdrop-blur-md" role="banner">
       <nav className="mx-auto flex max-w-[1100px] items-center justify-between px-6 py-4" aria-label="Main navigation">
         <Link to="/" className="font-serif text-xl font-bold tracking-tight text-foreground" aria-label="Home">
-          <span className="font-sans text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">Portfolio</span>
+          <span className="font-sans text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">Matthew Parlee</span>
         </Link>
 
         {/* Desktop */}
