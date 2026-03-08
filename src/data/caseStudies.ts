@@ -1,0 +1,141 @@
+export interface CaseStudy {
+  id: string;
+  title: string;
+  teaser: string;
+  tags: string[];
+  coverImage: string;
+  overview: string;
+  problem: string;
+  solution: string;
+  process: { phase: string; description: string }[];
+  images: { src: string; alt: string; caption: string }[];
+  results: { metrics: string[]; quote?: string; quoteAuthor?: string };
+}
+
+export const caseStudies: CaseStudy[] = [
+  {
+    id: "onboarding-redesign",
+    title: "New Hire Onboarding Redesign",
+    teaser: "Reduced time-to-competency by 40% through a blended learning approach for a Fortune 500 tech company.",
+    tags: ["E-Learning", "Blended Learning", "LMS"],
+    coverImage: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80",
+    overview: "A comprehensive redesign of the onboarding program for a global technology company with 5,000+ new hires annually. The existing program relied on 3-day in-person sessions with low engagement scores and inconsistent outcomes.",
+    problem: "New hires took an average of 90 days to reach baseline productivity. Feedback surveys showed only 45% satisfaction with existing onboarding materials. High attrition within the first 6 months was partially attributed to poor onboarding experience. Managers reported inconsistent skill levels among new team members.",
+    solution: "Designed a 30-day blended learning journey combining self-paced e-learning modules, virtual instructor-led sessions, on-the-job practice activities, and a peer mentoring framework. Applied spaced repetition and scenario-based assessments to reinforce critical knowledge.",
+    process: [
+      { phase: "Analysis", description: "Conducted stakeholder interviews with 12 department heads and surveyed 200+ recent hires to identify critical knowledge gaps and pain points in the existing program." },
+      { phase: "Design", description: "Created a learning architecture map, defined measurable objectives using Bloom's Taxonomy, and developed detailed storyboards for 8 interactive modules." },
+      { phase: "Development", description: "Built modules in Articulate Storyline 360 with branching scenarios, knowledge checks, and multimedia elements. Developed facilitator guides for virtual sessions." },
+      { phase: "Implementation", description: "Piloted with 50 new hires across 3 departments, gathered feedback through daily pulse surveys, and iterated on content based on learner analytics." },
+      { phase: "Evaluation", description: "Measured impact using Kirkpatrick's Four Levels. Tracked completion rates, assessment scores, manager satisfaction, and time-to-productivity metrics." },
+    ],
+    images: [
+      { src: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80", alt: "E-learning module interface showing interactive scenario", caption: "Interactive branching scenario in Module 3: Customer Communication" },
+      { src: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80", alt: "Storyboard layout for onboarding module", caption: "Detailed storyboard showing learner flow and decision points" },
+      { src: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80", alt: "Team collaboration during design phase", caption: "Collaborative design session with SMEs and stakeholders" },
+    ],
+    results: {
+      metrics: [
+        "40% reduction in time-to-competency (90 → 54 days)",
+        "87% learner satisfaction score (up from 45%)",
+        "22% decrease in first-year attrition",
+        "95% module completion rate",
+      ],
+      quote: "This redesign transformed how we bring people into our organization. The difference in new hire confidence and readiness is remarkable.",
+      quoteAuthor: "VP of People Operations",
+    },
+  },
+  {
+    id: "compliance-training",
+    title: "Compliance Training Gamification",
+    teaser: "Transformed mandatory compliance training into an engaging experience, boosting completion from 62% to 98%.",
+    tags: ["Gamification", "Compliance", "Mobile Learning"],
+    coverImage: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&q=80",
+    overview: "Redesigned annual compliance training for a healthcare organization with 3,000 employees across 15 facilities. The existing approach used text-heavy slide decks that failed to engage learners or drive behavior change.",
+    problem: "Compliance completion rates averaged 62%, putting the organization at regulatory risk. Knowledge retention assessments showed only 35% recall after 30 days. Employees reported the training as 'irrelevant' and 'boring,' leading to click-through behavior without genuine learning.",
+    solution: "Developed a gamified learning experience using scenario-based challenges, point systems, team leaderboards, and real-world case studies from the healthcare industry. Content was chunked into 10-minute mobile-friendly microlearning modules.",
+    process: [
+      { phase: "Analysis", description: "Reviewed compliance incident reports and interviewed compliance officers to identify the highest-risk knowledge areas and common violations." },
+      { phase: "Design", description: "Mapped game mechanics to learning objectives. Designed a badge and achievement system tied to competency milestones. Created scenario scripts based on real incidents." },
+      { phase: "Development", description: "Built in Articulate Rise with custom JavaScript for gamification elements. Developed a companion mobile app for push notifications and microlearning delivery." },
+      { phase: "Implementation", description: "Launched in phases by facility. Trained compliance champions at each site to support rollout and drive engagement through team challenges." },
+      { phase: "Evaluation", description: "Tracked engagement analytics, completion rates, assessment scores, and compliance incident rates over 12 months post-launch." },
+    ],
+    images: [
+      { src: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&q=80", alt: "Gamified learning dashboard showing progress and badges", caption: "Learner dashboard with achievement badges and progress tracking" },
+      { src: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&q=80", alt: "Mobile learning interface", caption: "Mobile-optimized microlearning module on compliance scenarios" },
+    ],
+    results: {
+      metrics: [
+        "98% completion rate (up from 62%)",
+        "72% knowledge retention at 30 days (up from 35%)",
+        "45% reduction in compliance incidents",
+        "4.6/5.0 average learner satisfaction rating",
+      ],
+      quote: "For the first time, our staff actually talked about compliance training in a positive way. The gamification made it feel relevant to their daily work.",
+      quoteAuthor: "Chief Compliance Officer",
+    },
+  },
+  {
+    id: "sales-enablement",
+    title: "Sales Enablement Job Aids",
+    teaser: "Created a suite of performance support tools that increased sales team close rates by 18%.",
+    tags: ["Job Aid", "Performance Support", "Sales"],
+    coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+    overview: "Developed a comprehensive set of just-in-time performance support tools for a B2B SaaS company's sales team of 120 representatives. The team needed quick-access resources for competitive positioning, objection handling, and product demos.",
+    problem: "Sales reps spent an average of 45 minutes per day searching for product information across disparate systems. Win rates had dropped 12% over two quarters. New product launches were hampered by slow knowledge transfer, and reps reported low confidence in competitive positioning.",
+    solution: "Designed a searchable digital job aid system with interactive decision trees for objection handling, competitive battle cards, and step-by-step demo guides. All resources were accessible within the CRM workflow to minimize context-switching.",
+    process: [
+      { phase: "Analysis", description: "Shadowed top-performing reps, analyzed CRM data for common deal blockers, and conducted a content audit of existing sales collateral to identify gaps." },
+      { phase: "Design", description: "Created information architecture for the job aid system. Designed templates for battle cards, objection handlers, and demo scripts using cognitive load principles." },
+      { phase: "Development", description: "Built interactive HTML5 job aids with search functionality. Integrated with Salesforce for in-workflow access. Created video micro-demos for complex product features." },
+      { phase: "Implementation", description: "Rolled out with a 'train-the-trainer' model. Sales managers led adoption in team meetings. Established a feedback loop for continuous content updates." },
+      { phase: "Evaluation", description: "Measured impact on search time, win rates, ramp time for new reps, and rep confidence scores through quarterly surveys." },
+    ],
+    images: [
+      { src: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&q=80", alt: "Sales battle card template design", caption: "Competitive battle card template with quick-reference format" },
+      { src: "https://images.unsplash.com/photo-1553028826-f4804a6dba3b?w=800&q=80", alt: "Interactive decision tree for objection handling", caption: "Interactive objection handling decision tree" },
+    ],
+    results: {
+      metrics: [
+        "18% increase in close rates within 6 months",
+        "70% reduction in information search time",
+        "30% faster ramp time for new sales hires",
+        "91% adoption rate across the sales team",
+      ],
+      quote: "These tools gave our reps the confidence to handle any conversation. It's the most impactful enablement initiative we've ever launched.",
+      quoteAuthor: "Director of Sales Enablement",
+    },
+  },
+  {
+    id: "leadership-development",
+    title: "Leadership Development Program",
+    teaser: "Designed a cohort-based program that improved manager effectiveness scores by 35% across the organization.",
+    tags: ["Leadership", "Cohort Learning", "Virtual ILT"],
+    coverImage: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80",
+    overview: "Created a 12-week leadership development program for mid-level managers at a financial services firm. The program combined virtual instructor-led workshops, peer coaching circles, and applied learning projects to build critical leadership competencies.",
+    problem: "Employee engagement surveys revealed that 'relationship with direct manager' was the lowest-scoring category at 3.1/5.0. Exit interviews cited poor management as a top-3 reason for departure in 40% of cases. Existing leadership training was a one-time 2-day workshop with no follow-up or accountability.",
+    solution: "Designed a 12-week cohort-based journey blending bi-weekly virtual workshops with structured peer coaching, reflective journaling, and real-world application projects. Each module focused on a specific competency: coaching conversations, feedback delivery, psychological safety, and strategic thinking.",
+    process: [
+      { phase: "Analysis", description: "Analyzed engagement survey data, conducted focus groups with direct reports, and benchmarked against leadership competency frameworks from CCL and DDI." },
+      { phase: "Design", description: "Built a competency-based curriculum map with progressive complexity. Designed experiential activities, case studies, and reflection prompts for each session." },
+      { phase: "Development", description: "Created facilitator guides, participant workbooks, peer coaching protocols, and a digital learning community space. Developed pre-work videos and post-session application challenges." },
+      { phase: "Implementation", description: "Launched with a pilot cohort of 24 managers. Facilitated bi-weekly live sessions and monitored peer coaching circle engagement. Adjusted pacing based on participant feedback." },
+      { phase: "Evaluation", description: "Used 360-degree assessments pre- and post-program, tracked engagement survey scores for participants' teams, and measured application of skills through manager observation rubrics." },
+    ],
+    images: [
+      { src: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=800&q=80", alt: "Virtual workshop session with breakout activities", caption: "Live virtual workshop with structured breakout discussions" },
+      { src: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&q=80", alt: "Participant workbook and reflection journal", caption: "Participant workbook with guided reflection prompts" },
+    ],
+    results: {
+      metrics: [
+        "35% improvement in manager effectiveness scores",
+        "Manager engagement category rose from 3.1 to 4.2/5.0",
+        "28% reduction in voluntary turnover for participants' teams",
+        "100% of participants recommended the program to peers",
+      ],
+      quote: "This wasn't just another training program — it changed how I show up as a leader every single day. The peer coaching was transformative.",
+      quoteAuthor: "Program Participant, Senior Manager",
+    },
+  },
+];
