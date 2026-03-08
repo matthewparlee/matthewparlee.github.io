@@ -71,9 +71,6 @@ const Index = () => {
             <p className="mt-4 leading-relaxed text-muted-foreground">
               I'm a Senior Learning Experience Consultant with 10+ years of experience designing and developing customized learning solutions across energy, telecommunications, finance, insurance, and education. Previously a Senior Instructional Designer at Innovatia Inc. for eight years, I now work independently to help organizations close performance gaps through evidence-based design. Every project begins with a deep needs analysis and ends with measurable outcomes.
             </p>
-            <p className="mt-3 leading-relaxed text-muted-foreground">
-              I hold a B.A. from Mount Allison University and a B.Ed from the University of New Brunswick, along with a Project Management Fundamentals certificate (McKenna/IBM/IPMA). My toolkit includes Articulate Storyline & Rise, Adobe Captivate, Camtasia, and a range of LMS platforms. Every project begins with a deep needs analysis and ends with measurable outcomes.
-            </p>
           </div>
         </div>
       </section>
