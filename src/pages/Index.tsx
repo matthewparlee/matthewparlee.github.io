@@ -1,13 +1,114 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { ArrowRight, Brain, Users, Target } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 30 },
+  visible: (i: number) => ({ opacity: 1, y: 0, transition: { delay: i * 0.15, duration: 0.6, ease: "easeOut" } }),
+};
+
+const principles = [
+  { icon: Brain, title: "Cognitive Load Theory", description: "Designing experiences that respect working memory limits, chunking information for optimal retention and transfer." },
+  { icon: Target, title: "Scenario-Based Learning", description: "Immersing learners in realistic situations that build decision-making skills and drive genuine behavior change." },
+  { icon: Users, title: "User-Centricity", description: "Placing the learner at the center of every design decision — from needs analysis through evaluation and iteration." },
+];
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main>
+      {/* Hero */}
+      <section className="relative overflow-hidden py-24 sm:py-36" aria-labelledby="hero-heading">
+        <div className="mx-auto max-w-[1100px] px-6">
+          <motion.h1
+            id="hero-heading"
+            className="max-w-2xl font-serif text-5xl leading-[1.1] tracking-tight text-foreground sm:text-6xl lg:text-7xl"
+            initial="hidden"
+            animate="visible"
+            custom={0}
+            variants={fadeUp}
+          >
+            Bridging Performance Gaps Through Evidence-Based Design
+          </motion.h1>
+          <motion.p
+            className="mt-6 max-w-lg text-lg leading-relaxed text-muted-foreground"
+            initial="hidden"
+            animate="visible"
+            custom={1}
+            variants={fadeUp}
+          >
+            I design learning experiences that solve real business problems — grounded in research, driven by data, and built for impact.
+          </motion.p>
+          <motion.div initial="hidden" animate="visible" custom={2} variants={fadeUp} className="mt-10">
+            <Button asChild size="lg" className="gap-2 rounded-full px-8">
+              <Link to="/case-studies">
+                View Case Studies <ArrowRight className="h-4 w-4" />
+              </Link>
+            </Button>
+          </motion.div>
+        </div>
+        {/* Decorative element */}
+        <div className="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full bg-primary/5 blur-3xl" aria-hidden="true" />
+      </section>
+
+      {/* About */}
+      <section className="border-t py-20 sm:py-28" aria-labelledby="about-heading">
+        <div className="mx-auto grid max-w-[1100px] gap-12 px-6 md:grid-cols-2 md:items-center">
+          <div className="flex justify-center">
+            <div className="h-72 w-72 overflow-hidden rounded-2xl bg-secondary sm:h-80 sm:w-80" aria-label="Professional headshot placeholder">
+              <img
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80"
+                alt="Professional headshot"
+                className="h-full w-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div>
+            <h2 id="about-heading" className="font-serif text-3xl tracking-tight text-foreground sm:text-4xl">
+              About Me
+            </h2>
+            <p className="mt-4 leading-relaxed text-muted-foreground">
+              I'm an instructional designer with 8+ years of experience transforming complex information into engaging, effective learning experiences. My work spans e-learning development, curriculum design, and performance consulting across healthcare, technology, and financial services.
+            </p>
+            <p className="mt-3 leading-relaxed text-muted-foreground">
+              I hold a Master's in Instructional Design & Technology and certifications in Articulate Storyline, xAPI, and Agile project management. Every project begins with a deep understanding of the performance gap and ends with measurable outcomes.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Design Philosophy */}
+      <section className="border-t bg-secondary/30 py-20 sm:py-28" aria-labelledby="philosophy-heading">
+        <div className="mx-auto max-w-[1100px] px-6">
+          <h2 id="philosophy-heading" className="text-center font-serif text-3xl tracking-tight text-foreground sm:text-4xl">
+            Design Philosophy
+          </h2>
+          <p className="mx-auto mt-4 max-w-xl text-center text-muted-foreground">
+            Three principles guide every project I take on — ensuring that learning solutions are not just beautiful, but effective.
+          </p>
+          <div className="mt-14 grid gap-8 sm:grid-cols-3">
+            {principles.map((p, i) => (
+              <motion.article
+                key={p.title}
+                className="rounded-xl border bg-card p-8 transition-shadow hover:shadow-md"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-50px" }}
+                custom={i}
+                variants={fadeUp}
+              >
+                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                  <p.icon className="h-6 w-6" aria-hidden="true" />
+                </div>
+                <h3 className="mt-5 font-sans text-lg font-bold text-foreground">{p.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{p.description}</p>
+              </motion.article>
+            ))}
+          </div>
+        </div>
+      </section>
+    </main>
   );
 };
 
