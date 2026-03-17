@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, Brain, Users, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import profpic from "@/assets/profpic.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
