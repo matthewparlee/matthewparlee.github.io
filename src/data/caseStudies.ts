@@ -1,3 +1,5 @@
+import disinfectionCourseDesign from "@/assets/disinfection-course-design.png";
+
 export interface CaseStudy {
   id: string;
   title: string;
