@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, Brain, Users, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import profpic from "@/assets/profpic.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -57,8 +58,8 @@ const Index = () => {
           <div className="flex justify-center">
             <div className="h-72 w-72 overflow-hidden rounded-2xl bg-secondary sm:h-80 sm:w-80" aria-label="Professional headshot placeholder">
               <img
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80"
-                alt="Professional headshot"
+                src={profpic}
+                alt="Matthew Parlee — Senior Learning Experience Consultant"
                 className="h-full w-full object-cover"
                 loading="lazy"
               />
