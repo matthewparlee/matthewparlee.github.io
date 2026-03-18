@@ -176,6 +176,10 @@ const CaseStudyDetail = () => {
             </Link>
           ) : <span />}
         </nav>
+
+        <p className="mt-12 text-center text-xs leading-relaxed text-muted-foreground/70 italic">
+          To respect the privacy and proprietary information of my clients, certain details, textual information, visual elements, and specific branding has been modified or replaced with generic equivalents.
+        </p>
       </article>
     </main>
   );

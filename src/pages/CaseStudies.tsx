@@ -59,6 +59,10 @@ const CaseStudies = () => (
           </motion.article>
         ))}
       </div>
+
+      <p className="mt-16 text-center text-xs leading-relaxed text-muted-foreground/70 italic">
+        To respect the privacy and proprietary information of my clients, certain details, textual information, visual elements, and specific branding has been modified or replaced with generic equivalents.
+      </p>
     </div>
   </main>
 );
