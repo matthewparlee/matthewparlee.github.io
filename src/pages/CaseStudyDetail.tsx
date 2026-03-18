@@ -114,11 +114,11 @@ const CaseStudyDetail = () => {
                       className="group mt-4 overflow-hidden rounded-lg border focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                       aria-label={`View ${step.image.alt} in full resolution`}
                     >
-                      <div className="aspect-[16/9] max-w-md overflow-hidden">
+                      <div className="max-w-md overflow-hidden">
                         <img
                           src={step.image.src}
                           alt={step.image.alt}
-                          className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                          className="h-auto w-full transition-transform duration-300 group-hover:scale-105"
                           loading="lazy"
                         />
                       </div>
