@@ -22,7 +22,7 @@ export const caseStudies: CaseStudy[] = [
     coverImage: "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=800&q=80",
     overview: "Served as Senior Instructional Designer for a certificate program developed for a leading multinational manufacturer of professional cleaning products. The project involved creating an online learning program to equip frontline workers with best practices for disinfecting public spaces, particularly during periods of pandemic recovery and heightened public health awareness.",
     problem: "During the recovery phases of a global pandemic, there was a critical need for accessible, effective, and standardized training for professional cleaners. These workers lacked a centralized, third-party accredited educational resource that provided vertical-specific cleaning protocols for environments like schools, offices, and hospitals.",
-    solution: "Designed and developed the first third-party accredited certificate courses within the client's new on-demand online learning platform. The solution features vertical-specific training with targeted protocols for diverse environments including healthcare facilities, athletic centers, and educational institutions. A comprehensive curriculum covers product use, advanced disinfection technologies, and the latest industry best practices. The turnkey platform provides essential knowledge and immediate training access to maintain safe shared spaces.",
+    solution: "Designed and developed the first third-party accredited certificate courses within the client's new on-demand online learning platform. The solution features learning opportunities with targeted protocols for diverse public spaces. A comprehensive curriculum covers product use, advanced disinfection technologies, and the latest industry best practices. The turnkey platform provides essential knowledge and immediate training access to maintain safe shared spaces.",
     process: [
       { phase: "Stakeholder Collaboration", description: "Partnered with subject matter experts from the client's professional division to translate their disinfection expertise into digital learning opportunities." },
       { phase: "Program and Course Design", description: "Created detailed storyboards and oversaw the production of multimedia content to demonstrate advanced surface disinfection and product application.", image: { src: disinfectionCourseDesign, alt: "Course design scenario for disinfection training", caption: "Detailed scenarios to practice real-world application." } },
@@ -31,8 +31,8 @@ export const caseStudies: CaseStudy[] = [
     ],
     results: {
       metrics: [
-        "Course earned accreditation from the ANSI National Accreditation Board (ANAB)",
-        "First accredited certificate course launched under the client's professional learning platform",
+        "Learning program earned accreditation from the ANSI National Accreditation Board (ANAB)",
+        "First accredited certificate program launched under the client's professional learning platform",
         "Program serves as a top-quality tool to safeguard the public and credential essential workers",
         "Winner of the Sanitary Maintenance Distributor Choice Award",
       ],
