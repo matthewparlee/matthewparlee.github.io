@@ -1,4 +1,5 @@
 import disinfectionCourseDesign from "@/assets/disinfection-course-design.png";
+import cleanEdit from "@/assets/clean-edit.png";
 
 export interface CaseStudy {
   id: string;
