@@ -118,7 +118,7 @@ const CaseStudyDetail = () => {
                         <img
                           src={step.image.src}
                           alt={step.image.alt}
-                          className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                          className="h-auto w-full transition-transform duration-300 group-hover:scale-105"
                           loading="lazy"
                         />
                       </div>
