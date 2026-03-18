@@ -31,8 +31,8 @@ export const caseStudies: CaseStudy[] = [
     ],
     results: {
       metrics: [
-        "Course earned accreditation from the ANSI National Accreditation Board (ANAB)",
-        "First accredited certificate course launched under the client's professional learning platform",
+        "Learning program earned accreditation from the ANSI National Accreditation Board (ANAB)",
+        "First accredited certificate program launched under the client's professional learning platform",
         "Program serves as a top-quality tool to safeguard the public and credential essential workers",
         "Winner of the Sanitary Maintenance Distributor Choice Award",
       ],
