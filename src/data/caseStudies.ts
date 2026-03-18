@@ -17,7 +17,7 @@ export const caseStudies: CaseStudy[] = [
   {
     id: "accredited-disinfection-certificate",
     title: "Accredited Disinfection Certificate Program",
-    teaser: "Designed the first ANAB-accredited certificate course for a leading cleaning products manufacturer, equipping frontline workers with standardized disinfection protocols.",
+    teaser: "Designed the first nationally accredited certificate course for a leading cleaning products manufacturer, equipping frontline workers with standardized disinfection protocols.",
     tags: ["E-Learning", "Certificate Program", "Accreditation"],
     coverImage: "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=800&q=80",
     overview: "Served as Senior Instructional Designer for a certificate program developed for a leading multinational manufacturer of professional cleaning products. The project involved creating an online learning program to equip frontline workers with best practices for disinfecting public spaces, particularly during periods of pandemic recovery and heightened public health awareness.",
