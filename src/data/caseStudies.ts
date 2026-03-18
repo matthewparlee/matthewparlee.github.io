@@ -34,6 +34,7 @@ export const caseStudies: CaseStudy[] = [
         "Learning program earned accreditation from the ANSI National Accreditation Board (ANAB)",
         "First accredited certificate program launched under the client's professional learning platform",
         "Program serves as a top-quality tool to safeguard the public and credential essential workers",
+        "Frontline cleaners saw a marked increase in cleaning performance",
       ],
     },
   },
