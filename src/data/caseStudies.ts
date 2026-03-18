@@ -17,7 +17,7 @@ export const caseStudies: CaseStudy[] = [
   {
     id: "accredited-disinfection-certificate",
     title: "Accredited Disinfection Certificate Program",
-    teaser: "Designed the first ANAB-accredited certificate course for a leading cleaning products manufacturer, equipping frontline workers with standardized disinfection protocols.",
+    teaser: "Designed the first nationally accredited certificate course for a leading cleaning products manufacturer, equipping frontline workers with standardized disinfection protocols.",
     tags: ["E-Learning", "Certificate Program", "Accreditation"],
     coverImage: "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=800&q=80",
     overview: "Served as Senior Instructional Designer for a certificate program developed for a leading multinational manufacturer of professional cleaning products. The project involved creating an online learning program to equip frontline workers with best practices for disinfecting public spaces, particularly during periods of pandemic recovery and heightened public health awareness.",
@@ -27,11 +27,11 @@ export const caseStudies: CaseStudy[] = [
       { phase: "Stakeholder Collaboration", description: "Partnered with subject matter experts from the client's professional division to translate their disinfection expertise into digital learning opportunities." },
       { phase: "Program and Course Design", description: "Created detailed storyboards and oversaw the production of multimedia content to demonstrate advanced surface disinfection and product application.", image: { src: disinfectionCourseDesign, alt: "Course design scenario for disinfection training", caption: "Detailed scenarios to practice real-world application." } },
       { phase: "Assessment Development", description: "Designed a rigorous, assessment-based training framework to ensure learners met high-quality competency standards.", image: { src: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80", alt: "Assessment framework interface", caption: "Competency-based assessment framework for certificate program" } },
-      { phase: "Standards Alignment", description: "Developed all content in strict accordance with the American National Standard, ANSI/ASTM E2659-18, which is the standard practice for certificate programs." },
+      { phase: "Standards Alignment", description: "Developed all content in strict accordance with a national credentialing standard, which is the standard practice for certificate programs." },
     ],
     results: {
       metrics: [
-        "Learning program earned accreditation from the ANSI National Accreditation Board (ANAB)",
+        "Learning program earned accreditation from a nationally recognized credentialing body",
         "First accredited certificate program launched under the client's professional learning platform",
         "Program serves as a top-quality tool to safeguard the public and credential essential workers",
         "Frontline cleaners saw a marked increase in cleaning performance",
