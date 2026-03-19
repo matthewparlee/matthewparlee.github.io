@@ -31,12 +31,31 @@ export const caseStudies: CaseStudy[] = [
       { phase: "Assessment Development", description: "Designed a rigorous, assessment-based training framework to ensure learners met high-quality competency standards.", image: { src: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80", alt: "Assessment framework interface", caption: "Competency-based assessment framework for certificate program" } },
       { phase: "Standards Alignment", description: "Developed all content in strict accordance with a national credentialing standard, which is the standard practice for certificate programs." },
     ],
-    results: {
-      metrics: [
-        "Learning program earned accreditation from a nationally recognized credentialing body",
-        "First accredited certificate program launched under the client's professional learning platform",
-        "Program serves as a top-quality tool to safeguard the public and credential essential workers",
-        "Frontline cleaners saw a marked increase in cleaning performance",
+    results: { metrics: [] },
+    aiEvolution: {
+      intro: "Building on the success of the accredited certificate program, the next phase envisions integrating AI-driven technologies to create a more adaptive, personalized, and continuously improving learning ecosystem for frontline cleaning professionals.",
+      cards: [
+        {
+          title: "Individualized Learning Paths",
+          points: [
+            "Pre-Assessment Diagnostic: An AI-powered initial assessment evaluates each learner's existing knowledge of cleaning protocols, chemical safety, and specific vertical requirements to create a customized curriculum path.",
+            "Just-in-Time Support: Context-aware AI assistants provide on-demand guidance during training modules, answering questions about product application rates, dwell times, and surface compatibility in real time.",
+          ],
+        },
+        {
+          title: "Advanced Assessment & Practical Feedback",
+          points: [
+            "AI-Simulated Branching Scenarios: Learners navigate realistic, AI-generated disinfection scenarios — such as an outbreak response in a school or a post-surgical suite turnover — where their decisions dynamically alter outcomes and feedback.",
+            "Computer Vision Practicals: Using smartphone cameras, AI analyzes a learner's actual cleaning technique — spray pattern, coverage area, and PPE compliance — providing instant corrective feedback during hands-on practice sessions.",
+          ],
+        },
+        {
+          title: "Metrics & Continuous Improvement",
+          points: [
+            "Predictive Performance Analytics: AI models analyze learning patterns and assessment data to identify at-risk learners early and recommend targeted interventions before certification attempts.",
+            "Sentiment & Engagement Tracking: Natural language processing monitors discussion forums and feedback submissions to surface emerging training gaps, learner frustrations, and content improvement opportunities.",
+          ],
+        },
       ],
     },
   },

@@ -140,29 +140,58 @@ const CaseStudyDetail = () => {
           onNavigate={setLightboxIndex}
         />
 
-        {/* Results */}
-        <motion.section className="mt-16" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} aria-labelledby="results">
-          <h2 id="results" className="font-serif text-2xl text-foreground sm:text-3xl">The Results</h2>
-          <div className="mt-8 rounded-xl border-2 border-primary/20 bg-primary/5 p-8">
-            <ul className="grid gap-3 sm:grid-cols-2" role="list">
-              {cs.results.metrics.map((m) => (
-                <li key={m} className="flex items-start gap-2">
-                  <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-primary" aria-hidden="true" />
-                  <span className="font-sans text-sm font-medium text-foreground">{m}</span>
-                </li>
+        {/* Results (only if metrics exist) */}
+        {cs.results.metrics.length > 0 && (
+          <motion.section className="mt-16" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} aria-labelledby="results">
+            <h2 id="results" className="font-serif text-2xl text-foreground sm:text-3xl">The Results</h2>
+            <div className="mt-8 rounded-xl border-2 border-primary/20 bg-primary/5 p-8">
+              <ul className="grid gap-3 sm:grid-cols-2" role="list">
+                {cs.results.metrics.map((m) => (
+                  <li key={m} className="flex items-start gap-2">
+                    <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-primary" aria-hidden="true" />
+                    <span className="font-sans text-sm font-medium text-foreground">{m}</span>
+                  </li>
+                ))}
+              </ul>
+              {cs.results.quote && (
+                <blockquote className="mt-8 border-t border-primary/10 pt-6">
+                  <Quote className="mb-2 h-5 w-5 text-primary/40" aria-hidden="true" />
+                  <p className="font-serif text-lg italic text-foreground">"{cs.results.quote}"</p>
+                  {cs.results.quoteAuthor && (
+                    <cite className="mt-2 block text-sm font-medium not-italic text-muted-foreground">— {cs.results.quoteAuthor}</cite>
+                  )}
+                </blockquote>
+              )}
+            </div>
+          </motion.section>
+        )}
+
+        {/* AI Evolution */}
+        {cs.aiEvolution && (
+          <motion.section className="mt-16" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} aria-labelledby="ai-evolution">
+            <h2 id="ai-evolution" className="font-serif text-2xl text-foreground sm:text-3xl">AI Evolution</h2>
+            <p className="mt-4 max-w-3xl leading-relaxed text-muted-foreground">{cs.aiEvolution.intro}</p>
+            <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {cs.aiEvolution.cards.map((card) => (
+                <Card key={card.title} className="border-border/60">
+                  <CardHeader>
+                    <CardTitle className="font-sans text-lg">{card.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <ul className="space-y-3" role="list">
+                      {card.points.map((point) => (
+                        <li key={point} className="flex items-start gap-2 text-sm leading-relaxed text-muted-foreground">
+                          <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-primary" aria-hidden="true" />
+                          <span>{point}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
               ))}
-            </ul>
-            {cs.results.quote && (
-              <blockquote className="mt-8 border-t border-primary/10 pt-6">
-                <Quote className="mb-2 h-5 w-5 text-primary/40" aria-hidden="true" />
-                <p className="font-serif text-lg italic text-foreground">"{cs.results.quote}"</p>
-                {cs.results.quoteAuthor && (
-                  <cite className="mt-2 block text-sm font-medium not-italic text-muted-foreground">— {cs.results.quoteAuthor}</cite>
-                )}
-              </blockquote>
-            )}
-          </div>
-        </motion.section>
+            </div>
+          </motion.section>
+        )}
 
         {/* Prev / Next */}
         <nav className="mt-20 flex items-center justify-between border-t pt-8" aria-label="Case study navigation">
