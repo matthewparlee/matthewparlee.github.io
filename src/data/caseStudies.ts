@@ -10,6 +10,7 @@ export interface CaseStudy {
   overview: string;
   problem: string;
   solution: string;
+  solutionPoints?: string[];
   process: { phase: string; description: string; image?: { src: string; alt: string; caption: string } }[];
   results: { metrics: string[]; quote?: string; quoteAuthor?: string };
   aiEvolution?: { intro: string; cards: { title: string; points: string[] }[] };
