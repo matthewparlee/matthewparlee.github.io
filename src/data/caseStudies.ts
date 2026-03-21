@@ -71,7 +71,12 @@ export const caseStudies: CaseStudy[] = [
     coverImage: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&q=80",
     overview: "To stay competitive in an evolving landscape, a multinational financial services provider pivoted toward a digital strategy for client self-enablement. As Senior Instructional Designer, I designed learning experiences that empowered financial advisors to integrate this evolving approach into their existing client relationships without disrupting the \"human touch.\"",
     problem: "The financial advisors and other client-facing roles needed opportunities to gain confidence in this new approach and the associated digital platforms. The client needed to ensure advisors could find organic, meaningful opportunities to showcase the digital enablement opportunities within the context of their customers' unique financial priorities.",
-    solution: "I designed a Scenario-Based Learning experience that empowered advisors to bridge the gap between digital self-serve tools and personalized advice. Immersive Simulations created scenarios rooted in common client life or business events (e.g., retirement planning, updating business accounts). A Safe-to-Fail Environment allowed advisors to practice positioning the platform's value. Grounded Feedback provided immediate, context-specific feedback during simulated client interactions.",
+    solution: "I designed a Scenario-Based Learning experience that empowered advisors to bridge the gap between digital self-serve tools and personalized advice.",
+    solutionPoints: [
+      "Immersive Simulations created scenarios rooted in common client life or business events (e.g., retirement planning, updating business accounts).",
+      "A Safe-to-Fail Environment allowed advisors to practice positioning the platform's value.",
+      "Grounded Feedback provided immediate, context-specific feedback during simulated client interactions.",
+    ],
     process: [
       { phase: "Stakeholder Analysis", description: "Collaborated with SMEs to identify the specific moments of friction during client interactions." },
       { phase: "Contextual Design", description: "Outlined \"Digital Opportunities\" to help learners identify specific client cues that naturally invite digital support." },
