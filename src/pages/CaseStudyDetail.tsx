@@ -180,9 +180,8 @@ const CaseStudyDetail = () => {
                   <CardContent>
                     <ul className="space-y-3" role="list">
                       {card.points.map((point) => (
-                        <li key={point} className="flex items-start gap-2 text-sm leading-relaxed text-muted-foreground">
-                          <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-primary" aria-hidden="true" />
-                          <span>{point}</span>
+                        <li key={point} className="text-sm leading-relaxed text-muted-foreground">
+                          {point}
                         </li>
                       ))}
                     </ul>
