@@ -64,29 +64,42 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     id: "compliance-training",
-    title: "Compliance Training Gamification",
-    teaser: "Transformed mandatory compliance training into an engaging experience, boosting completion from 62% to 98%.",
-    tags: ["Gamification", "Compliance", "Mobile Learning"],
+    title: "Advisor Enablement for Digital Transformation",
+    teaser: "Designed scenario-based learning experiences that empowered financial advisors to integrate a digital strategy into client relationships without disrupting the human touch.",
+    tags: ["Scenario-Based Learning", "Digital Transformation", "Financial Services"],
     coverImage: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&q=80",
-    overview: "Redesigned annual compliance training for a healthcare organization with 3,000 employees across 15 facilities. The existing approach used text-heavy slide decks that failed to engage learners or drive behavior change.",
-    problem: "Compliance completion rates averaged 62%, putting the organization at regulatory risk. Knowledge retention assessments showed only 35% recall after 30 days. Employees reported the training as 'irrelevant' and 'boring,' leading to click-through behavior without genuine learning.",
-    solution: "Developed a gamified learning experience using scenario-based challenges, point systems, team leaderboards, and real-world case studies from the healthcare industry. Content was chunked into 10-minute mobile-friendly microlearning modules.",
+    overview: "To stay competitive in an evolving landscape, a multinational financial services provider pivoted toward a digital strategy for client self-enablement. As Senior Instructional Designer, I designed learning experiences that empowered financial advisors to integrate this evolving approach into their existing client relationships without disrupting the \"human touch.\"",
+    problem: "The financial advisors and other client-facing roles needed opportunities to gain confidence in this new approach and the associated digital platforms. The client needed to ensure advisors could find organic, meaningful opportunities to showcase the digital enablement opportunities within the context of their customers' unique financial priorities.",
+    solution: "I designed a Scenario-Based Learning experience that empowered advisors to bridge the gap between digital self-serve tools and personalized advice. Immersive Simulations created scenarios rooted in common client life or business events (e.g., retirement planning, updating business accounts). A Safe-to-Fail Environment allowed advisors to practice positioning the platform's value. Grounded Feedback provided immediate, context-specific feedback during simulated client interactions.",
     process: [
-      { phase: "Analysis", description: "Reviewed compliance incident reports and interviewed compliance officers to identify the highest-risk knowledge areas and common violations." },
-      { phase: "Design", description: "Mapped game mechanics to learning objectives. Designed a badge and achievement system tied to competency milestones. Created scenario scripts based on real incidents.", image: { src: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&q=80", alt: "Gamified learning dashboard showing progress and badges", caption: "Learner dashboard with achievement badges and progress tracking" } },
-      { phase: "Development", description: "Built in Articulate Rise with custom JavaScript for gamification elements. Developed a companion mobile app for push notifications and microlearning delivery.", image: { src: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&q=80", alt: "Mobile learning interface", caption: "Mobile-optimized microlearning module on compliance scenarios" } },
-      { phase: "Implementation", description: "Launched in phases by facility. Trained compliance champions at each site to support rollout and drive engagement through team challenges." },
-      { phase: "Evaluation", description: "Tracked engagement analytics, completion rates, assessment scores, and compliance incident rates over 12 months post-launch." },
+      { phase: "Stakeholder Analysis", description: "Collaborated with SMEs to identify the specific moments of friction during client interactions." },
+      { phase: "Contextual Design", description: "Outlined \"Digital Opportunities\" to help learners identify specific client cues that naturally invite digital support." },
+      { phase: "Iterative Prototyping", description: "Collaborated with stakeholders and SMEs to ensure the scenarios reflected real-world nuances and provided focused feedback." },
+      { phase: "Accessibility Compliance", description: "Communicated with the client to ensure all learning assets met strict internal standards to provide an equitable experience for all employees." },
     ],
-    results: {
-      metrics: [
-        "98% completion rate (up from 62%)",
-        "72% knowledge retention at 30 days (up from 35%)",
-        "45% reduction in compliance incidents",
-        "4.6/5.0 average learner satisfaction rating",
+    results: { metrics: [] },
+    aiEvolution: {
+      intro: "If I were to lead this project today, there are some exciting opportunities to explore and apply AI. Here are some strategies where the focused application of AI could be used to help this program achieve its specific business goals.",
+      cards: [
+        {
+          title: "Adaptive Challenge Levels",
+          points: [
+            "Generative Persona Engines can create thousands of unique client variations instead of a one-size-fits-all simulation. By tracking an advisor's previous performance, the AI can increase the complexity of the client's objections. If an advisor excels at \"Retirement Planning\" scenarios, the AI can pivot the client's persona to be more skeptical or technologically averse to push the learner's boundaries.",
+          ],
+        },
+        {
+          title: "Predictive Analytics",
+          points: [
+            "AI can analyze performance data (from both real-world call data and/or simulations) to automatically flag specific moments of friction where most advisors struggle to pivot to digital. This data can be used to refine the learning program to address real-world performance gaps.",
+          ],
+        },
+        {
+          title: "Sentiment Analysis",
+          points: [
+            "The program can pivot to include Generative Roleplay using LLMs, allowing advisors to practice natural language conversations. Since the core goal is maintaining the human connection while introducing digital tools, AI-powered sentiment analysis can be used to score the \"warmth\" or \"relatability\" of the advisor's response.",
+          ],
+        },
       ],
-      quote: "For the first time, our staff actually talked about compliance training in a positive way. The gamification made it feel relevant to their daily work.",
-      quoteAuthor: "Chief Compliance Officer",
     },
   },
   {
