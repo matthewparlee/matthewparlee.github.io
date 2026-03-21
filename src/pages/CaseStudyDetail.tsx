@@ -93,12 +93,22 @@ const CaseStudyDetail = () => {
           <p className="mt-4 max-w-3xl leading-relaxed text-muted-foreground">{cs.solution}</p>
           {cs.solutionPoints && cs.solutionPoints.length > 0 && (
             <ul className="mt-4 max-w-3xl space-y-2" role="list">
-              {cs.solutionPoints.map((point) => (
-                <li key={point} className="flex items-start gap-2">
-                  <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-primary" aria-hidden="true" />
-                  <span className="leading-relaxed text-muted-foreground">{point}</span>
-                </li>
-              ))}
+              {cs.solutionPoints.map((point) => {
+                const match = point.match(/^(.+?)\s+(created|allowed|provided|designed|developed|built|implemented)\b/i);
+                return (
+                  <li key={point} className="flex items-start gap-2">
+                    <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-primary" aria-hidden="true" />
+                    <span className="leading-relaxed text-muted-foreground">
+                      {match ? (
+                        <>
+                          <strong className="font-semibold text-foreground">{match[1]}</strong>{" "}
+                          {point.slice(match[1].length + 1)}
+                        </>
+                      ) : point}
+                    </span>
+                  </li>
+                );
+              })}
             </ul>
           )}
         </motion.section>
