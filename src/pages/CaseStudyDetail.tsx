@@ -91,6 +91,16 @@ const CaseStudyDetail = () => {
         <motion.section className="mt-16" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} aria-labelledby="solution">
           <h2 id="solution" className="font-serif text-2xl text-foreground sm:text-3xl">The Solution</h2>
           <p className="mt-4 max-w-3xl leading-relaxed text-muted-foreground">{cs.solution}</p>
+          {cs.solutionPoints && cs.solutionPoints.length > 0 && (
+            <ul className="mt-4 max-w-3xl space-y-2" role="list">
+              {cs.solutionPoints.map((point) => (
+                <li key={point} className="flex items-start gap-2">
+                  <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-primary" aria-hidden="true" />
+                  <span className="leading-relaxed text-muted-foreground">{point}</span>
+                </li>
+              ))}
+            </ul>
+          )}
         </motion.section>
 
         {/* Process */}
