@@ -33,27 +33,30 @@ export const caseStudies: CaseStudy[] = [
     ],
     results: { metrics: [] },
     aiEvolution: {
-      intro: "Building on the success of the accredited certificate program, the next phase envisions integrating AI-driven technologies to create a more adaptive, personalized, and continuously improving learning ecosystem for frontline cleaning professionals.",
+      intro: "If I were to lead this project today, I would leverage a Human-AI Collaborative Strategy to move from a static certificate program to a more individualized and adaptive learning ecosystem.",
       cards: [
         {
           title: "Individualized Learning Paths",
           points: [
-            "Pre-Assessment Diagnostic: An AI-powered initial assessment evaluates each learner's existing knowledge of cleaning protocols, chemical safety, and specific vertical requirements to create a customized curriculum path.",
-            "Just-in-Time Support: Context-aware AI assistants provide on-demand guidance during training modules, answering questions about product application rates, dwell times, and surface compatibility in real time.",
+            "An AI-powered diagnostic tool would evaluate a learner's existing knowledge. If a worker is already an expert in office cleaning but new to food surface protocols, the AI dynamically adjusts the curriculum to focus on the knowledge gaps.",
+          ],
+        },
+        {
+          title: "Adaptive Real-Time Support",
+          points: [
+            "An AI \"Knowledge Assistant\" would be embedded in the mobile learning app, allowing workers to ask specific questions on-site (e.g., \"What is the dwell time for this product on a non-porous surface?\") and receive immediate, accredited answers.",
           ],
         },
         {
           title: "Advanced Assessment & Practical Feedback",
           points: [
-            "AI-Simulated Branching Scenarios: Learners navigate realistic, AI-generated disinfection scenarios — such as an outbreak response in a school or a post-surgical suite turnover — where their decisions dynamically alter outcomes and feedback.",
-            "Computer Vision Practicals: Using smartphone cameras, AI analyzes a learner's actual cleaning technique — spray pattern, coverage area, and PPE compliance — providing instant corrective feedback during hands-on practice sessions.",
+            "Instead of multiple-choice questions, learners would engage with AI-simulated scenarios. The AI would evaluate their decision-making, provide context-based feedback, and apply focused updates to their individualized learning path.",
           ],
         },
         {
-          title: "Metrics & Continuous Improvement",
+          title: "Predictive Performance Analytics",
           points: [
-            "Predictive Performance Analytics: AI models analyze learning patterns and assessment data to identify at-risk learners early and recommend targeted interventions before certification attempts.",
-            "Sentiment & Engagement Tracking: Natural language processing monitors discussion forums and feedback submissions to surface emerging training gaps, learner frustrations, and content improvement opportunities.",
+            "By integrating AI with the client's operational data, we could correlate training with actual facility health metrics. This enables a more data-driven program, and a refined measurement and evaluation strategy.",
           ],
         },
       ],
