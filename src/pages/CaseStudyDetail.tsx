@@ -169,9 +169,9 @@ const CaseStudyDetail = () => {
         {/* AI Evolution */}
         {cs.aiEvolution && (
           <motion.section className="mt-16" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} aria-labelledby="ai-evolution">
-            <h2 id="ai-evolution" className="font-serif text-2xl text-foreground sm:text-3xl">AI Evolution</h2>
+            <h2 id="ai-evolution" className="font-serif text-2xl text-foreground sm:text-3xl">AI Roadmap</h2>
             <p className="mt-4 max-w-3xl leading-relaxed text-muted-foreground">{cs.aiEvolution.intro}</p>
-            <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
               {cs.aiEvolution.cards.map((card) => (
                 <Card key={card.title} className="border-border/60">
                   <CardHeader>
