@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { caseStudies } from "@/data/caseStudies";
-import { Badge } from "@/components/ui/badge";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
