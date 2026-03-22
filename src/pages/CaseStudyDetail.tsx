@@ -21,12 +21,15 @@ const CaseStudyDetail = () => {
   const index = caseStudies.findIndex((cs) => cs.id === id);
   const cs = caseStudies[index];
 
-  const processImages = useMemo(() => {
+  const allImages = useMemo(() => {
     if (!cs) return [];
-    return cs.process
-      .filter((s) => s.image)
-      .map((s) => s.image!);
+    const imgs: { src: string; alt: string; caption: string }[] = [];
+    if (cs.solutionImage) imgs.push(cs.solutionImage);
+    cs.process.filter((s) => s.image).forEach((s) => imgs.push(s.image!));
+    return imgs;
   }, [cs]);
+
+  const processImages = allImages;
 
   if (!cs) {
     return (
