@@ -39,14 +39,7 @@ const CaseStudies = () => (
                   loading="lazy"
                 />
               </div>
-              <div className="p-6">
-                <div className="flex flex-wrap gap-2">
-                  {cs.tags.map((tag) => (
-                    <Badge key={tag} variant="secondary" className="text-xs font-medium">
-                      {tag}
-                    </Badge>
-                  ))}
-                </div>
+              <div className="flex h-full flex-col p-6">
                 <h2 className="mt-3 font-sans text-xl font-bold text-foreground group-hover:text-primary transition-colors">
                   {cs.title}
                 </h2>
