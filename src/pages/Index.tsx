@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, Brain, Users, Target } from "lucide-react";
+import { ArrowRight, Compass, TrendingUp, FlaskConical } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import profpic from "@/assets/profpic.png";
 
@@ -10,9 +10,9 @@ const fadeUp = {
 };
 
 const principles = [
-  { icon: Brain, title: "Cognitive Load Theory", description: "Designing experiences that respect working memory limits, chunking information for optimal retention and transfer." },
-  { icon: Target, title: "Scenario-Based Learning", description: "Immersing learners in realistic situations that build decision-making skills and drive genuine behavior change." },
-  { icon: Users, title: "User-Centricity", description: "Placing the learner at the center of every design decision — from needs analysis through evaluation and iteration." },
+  { icon: Compass, title: "Context Changes Everything", description: "My approach anchors every solution in the specific context of the organization, as well as the daily decisions individuals must make to build toward measurable change." },
+  { icon: TrendingUp, title: "Problem Solving Grounded in Business Priorities", description: "Strategic problem-solving ensures every learning experience is a response to an actual business challenge. Value is found in the tangible performance shifts that drive growth." },
+  { icon: FlaskConical, title: "Solutions Supported by Science", description: "Evidence-based design is the foundation, whether the objective is the automation of technical tasks, elaborating to enhance mental models, or facilitating the recall necessary to perform across real-world contexts." },
 ];
 
 const Index = () => {
