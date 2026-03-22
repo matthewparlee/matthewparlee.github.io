@@ -112,15 +112,24 @@ const CaseStudyDetail = () => {
             </ul>
           )}
           {cs.solutionImage && (
-            <div className="mt-6 max-w-2xl overflow-hidden rounded-lg border">
-              <img
-                src={cs.solutionImage.src}
-                alt={cs.solutionImage.alt}
-                className="h-auto w-full"
-                loading="lazy"
-              />
-              <p className="p-3 text-xs text-muted-foreground">{cs.solutionImage.caption}</p>
-            </div>
+            <button
+              onClick={() => {
+                setLightboxIndex(0);
+                setLightboxOpen(true);
+              }}
+              className="group mt-6 overflow-hidden rounded-lg border focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              aria-label={`View ${cs.solutionImage.alt} in full resolution`}
+            >
+              <div className="max-w-md overflow-hidden">
+                <img
+                  src={cs.solutionImage.src}
+                  alt={cs.solutionImage.alt}
+                  className="h-auto w-full transition-transform duration-300 group-hover:scale-105"
+                  loading="lazy"
+                />
+              </div>
+              <p className="p-3 text-left text-xs text-muted-foreground">{cs.solutionImage.caption}</p>
+            </button>
           )}
         </motion.section>
 
