@@ -1,5 +1,6 @@
 import disinfectionCourseDesign from "@/assets/disinfection-course-design.png";
 import cleanEdit from "@/assets/clean-edit.png";
+import scenarioBank from "@/assets/scenario-bank.png";
 
 export interface CaseStudy {
   id: string;
@@ -11,6 +12,7 @@ export interface CaseStudy {
   problem: string;
   solution: string;
   solutionPoints?: string[];
+  solutionImage?: { src: string; alt: string; caption: string };
   process: { phase: string; description: string; image?: { src: string; alt: string; caption: string } }[];
   results: { metrics: string[]; quote?: string; quoteAuthor?: string };
   aiEvolution?: { intro: string; cards: { title: string; points: string[] }[] };
@@ -72,6 +74,7 @@ export const caseStudies: CaseStudy[] = [
     overview: "To stay competitive in an evolving landscape, a multinational financial services provider pivoted toward a digital strategy for client self-enablement. As Senior Instructional Designer, this project empowered financial advisors to integrate this evolving approach into their existing client relationships without disrupting the \"human touch.\"",
     problem: "The financial advisors and other client-facing roles needed opportunities to gain confidence in this new approach and the associated digital platforms. The client needed to ensure advisors could find organic, meaningful opportunities to showcase the digital enablement opportunities within the context of their customers' financial priorities.",
     solution: "A Scenario-Based Learning experience empowered advisors to bridge the gap between digital self-serve tools and personalized advice.",
+    solutionImage: { src: scenarioBank, alt: "Scenario-based learning interaction between advisor and client", caption: "Scenario-based learning simulation for advisor-client interactions" },
     solutionPoints: [
       "Immersive Simulations created scenarios rooted in common client life or business events (e.g., retirement planning, updating business accounts).",
       "A Safe-to-Fail Environment allowed advisors to practice positioning the platform's value.",
