@@ -111,6 +111,17 @@ const CaseStudyDetail = () => {
               })}
             </ul>
           )}
+          {cs.solutionImage && (
+            <div className="mt-6 max-w-2xl overflow-hidden rounded-lg border">
+              <img
+                src={cs.solutionImage.src}
+                alt={cs.solutionImage.alt}
+                className="h-auto w-full"
+                loading="lazy"
+              />
+              <p className="p-3 text-xs text-muted-foreground">{cs.solutionImage.caption}</p>
+            </div>
+          )}
         </motion.section>
 
         {/* Process */}
