@@ -28,7 +28,7 @@ const CaseStudies = () => (
           >
             <Link
               to={`/case-studies/${cs.id}`}
-              className="group block overflow-hidden rounded-xl border bg-card transition-shadow hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              className="group flex h-full flex-col overflow-hidden rounded-xl border bg-card transition-shadow hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
             >
               <div className="aspect-[16/9] overflow-hidden">
                 <img
@@ -38,11 +38,11 @@ const CaseStudies = () => (
                   loading="lazy"
                 />
               </div>
-              <div className="flex h-full flex-col p-6">
-                <h2 className="mt-3 font-sans text-xl font-bold text-foreground group-hover:text-primary transition-colors">
+              <div className="flex flex-1 flex-col p-6">
+                <h2 className="font-sans text-xl font-bold text-foreground group-hover:text-primary transition-colors">
                   {cs.title}
                 </h2>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{cs.teaser}</p>
+                <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">{cs.teaser}</p>
                 <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary">
                   Read Case Study <ArrowRight className="h-3.5 w-3.5" />
                 </span>
