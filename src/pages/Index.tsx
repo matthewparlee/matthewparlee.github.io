@@ -83,7 +83,7 @@ const Index = () => {
             Design Philosophy
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-center text-muted-foreground">
-            Three principles guide every project I take on — ensuring that learning solutions are not just beautiful, but effective.
+            Three principles guide every project I take on, ensuring that learning solutions always have a solid foundation.
           </p>
           <div className="mt-14 grid gap-8 sm:grid-cols-3">
             {principles.map((p, i) => (
