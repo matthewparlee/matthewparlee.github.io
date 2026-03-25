@@ -29,7 +29,7 @@ const Index = () => {
             custom={0}
             variants={fadeUp}
           >
-            Bridging Performance Gaps Through Evidence-Based Design
+            Translating Performance into Organizational Capability
           </motion.h1>
           <motion.p
             className="mt-6 max-w-lg text-lg leading-relaxed text-muted-foreground"
