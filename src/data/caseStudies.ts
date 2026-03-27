@@ -67,7 +67,7 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     id: "compliance-training",
-    title: "Advisor Enablement for Digital Transformation",
+    title: "Enabling Financial Advisors for Digital Transformation",
     teaser: "Designed scenario-based learning experiences that empowered financial advisors to integrate a digital strategy into client relationships without disrupting the human touch.",
     tags: ["Scenario-Based Learning", "Digital Transformation", "Financial Services"],
     coverImage: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&q=80",
