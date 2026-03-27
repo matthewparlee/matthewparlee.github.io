@@ -70,7 +70,10 @@ const Index = () => {
               About Me
             </h2>
             <p className="mt-4 leading-relaxed text-muted-foreground">
-              I'm a Senior Learning Experience Consultant with 10+ years of experience designing and developing customized learning solutions across energy, telecommunications, finance, insurance, and education. Previously a Senior Instructional Designer at Innovatia Inc. for eight years, I now work independently to help organizations close performance gaps through evidence-based design. Every project begins with a deep needs analysis and ends with measurable outcomes.
+              Hi, I'm Matthew! I'm a Senior Learning Experience Designer focused on crafting customized learning experiences and designing meaningful solutions.
+            </p>
+            <p className="mt-4 leading-relaxed text-muted-foreground">
+              To be honest, I've always found it a bit tricky to talk about my career in the first person. In L&D, successful projects are always a team effort: a "we" rather than an "I." The best work is always a collaboration with leadership, learning designers, and the people on the ground doing the work. This approach makes sure our solutions are proactive and actually fit into the flow of work and the lived reality of the business.
             </p>
           </div>
         </div>
