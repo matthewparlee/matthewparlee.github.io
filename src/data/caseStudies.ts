@@ -21,7 +21,7 @@ export interface CaseStudy {
 export const caseStudies: CaseStudy[] = [
   {
     id: "accredited-disinfection-certificate",
-    title: "Accredited Disinfection Certificate Program",
+    title: "Guiding Frontline Teams with Accredited Disinfection Program",
     teaser: "Designed the first nationally accredited certificate course for a leading cleaning products manufacturer, equipping frontline workers with standardized disinfection protocols.",
     tags: ["E-Learning", "Certificate Program", "Accreditation"],
     coverImage: "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=800&q=80",
