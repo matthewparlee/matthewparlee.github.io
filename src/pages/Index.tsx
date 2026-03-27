@@ -11,7 +11,7 @@ const fadeUp = {
 
 const principles = [
   { icon: Compass, title: "Context Changes Everything", description: "My approach anchors every solution in the specific context of the organization, as well as the daily decisions individuals must make to build toward measurable change." },
-  { icon: TrendingUp, title: "Problem Solving Grounded in Business Priorities", description: "Strategic problem-solving ensures every learning experience is a response to an actual business challenge. Value is found in the tangible performance shifts that drive growth." },
+  { icon: TrendingUp, title: "Problem Solving Grounded in Business Priorities", description: "Strategic problem-solving ensures every learning experience is a response to an actual business challenge. " },
   { icon: FlaskConical, title: "Solutions Supported by Science", description: "Evidence-based design is the foundation, whether the objective is the automation of technical tasks, elaborating to enhance mental models, or facilitating the recall necessary to perform across real-world contexts." },
 ];
 
