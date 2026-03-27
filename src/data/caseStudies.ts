@@ -25,7 +25,7 @@ export const caseStudies: CaseStudy[] = [
     title: "Guiding Frontline Teams with Accredited Disinfection Program",
     teaser: "Designed a nationally accredited certificate program, equipping frontline workers with standardized disinfection strategies.",
     tags: ["E-Learning", "Certificate Program", "Accreditation"],
-    coverImage: "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=800&q=80",
+    coverImage: cleanerImage,
     overview: "Served as Senior Instructional Designer for a certificate program developed for a leading multinational manufacturer of professional cleaning products. The project involved creating an online learning program to equip frontline workers with best practices for disinfecting public spaces, particularly during periods of pandemic recovery and heightened public health awareness.",
     problem: "During the recovery phases of a global pandemic, there was a critical need for accessible, effective, and standardized training for professional cleaners. These workers lacked a centralized, third-party accredited educational resource that provided vertical-specific cleaning protocols for environments like schools, offices, and hospitals.",
     solution: "Designed a third-party accredited certificate program within the client's online learning platform. The solution featured learning opportunities with targeted protocols for diverse public spaces. The courses covered product use, advanced disinfection technologies, and the latest industry best practices. The learning program provided essential knowledge and immediate training access to maintain safe shared spaces.",
