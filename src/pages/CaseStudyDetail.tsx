@@ -87,13 +87,17 @@ const CaseStudyDetail = () => {
         {/* Problem */}
         <motion.section className="mt-16" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} aria-labelledby="problem">
           <h2 id="problem" className="font-serif text-2xl text-foreground sm:text-3xl">The Problem</h2>
-          <p className="mt-4 max-w-3xl leading-relaxed text-muted-foreground">{cs.problem}</p>
+          {cs.problem.split('\n\n').map((para, i) => (
+            <p key={i} className="mt-4 max-w-3xl leading-relaxed text-muted-foreground">{para}</p>
+          ))}
         </motion.section>
 
         {/* Solution */}
         <motion.section className="mt-16" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} aria-labelledby="solution">
           <h2 id="solution" className="font-serif text-2xl text-foreground sm:text-3xl">The Solution</h2>
-          <p className="mt-4 max-w-3xl leading-relaxed text-muted-foreground">{cs.solution}</p>
+          {cs.solution.split('\n\n').map((para, i) => (
+            <p key={i} className="mt-4 max-w-3xl leading-relaxed text-muted-foreground">{para}</p>
+          ))}
           {cs.solutionPoints && cs.solutionPoints.length > 0 && (
             <ul className="mt-4 max-w-3xl space-y-2" role="list">
               {cs.solutionPoints.map((point) => {
