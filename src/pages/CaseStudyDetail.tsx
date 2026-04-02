@@ -97,15 +97,21 @@ const CaseStudyDetail = () => {
           {cs.solutionPoints && cs.solutionPoints.length > 0 && (
             <ul className="mt-4 max-w-3xl space-y-2" role="list">
               {cs.solutionPoints.map((point) => {
-                const match = point.match(/^(.+?)\s+(created|allowed|provided|designed|developed|built|implemented)\b/i);
+                const verbMatch = point.match(/^(.+?)\s+(created|allowed|provided|designed|developed|built|implemented)\b/i);
+                const colonMatch = !verbMatch ? point.match(/^(.+?):(.+)$/) : null;
                 return (
                   <li key={point} className="flex items-start gap-2">
                     <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-primary" aria-hidden="true" />
                     <span className="leading-relaxed text-muted-foreground">
-                      {match ? (
+                      {verbMatch ? (
                         <>
-                          <strong className="font-semibold text-foreground">{match[1]}</strong>{" "}
-                          {point.slice(match[1].length + 1)}
+                          <strong className="font-semibold text-foreground">{verbMatch[1]}</strong>{" "}
+                          {point.slice(verbMatch[1].length + 1)}
+                        </>
+                      ) : colonMatch ? (
+                        <>
+                          <strong className="font-semibold text-foreground">{colonMatch[1]}:</strong>
+                          {colonMatch[2]}
                         </>
                       ) : point}
                     </span>
