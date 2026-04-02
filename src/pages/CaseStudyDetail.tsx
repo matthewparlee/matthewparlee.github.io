@@ -87,25 +87,35 @@ const CaseStudyDetail = () => {
         {/* Problem */}
         <motion.section className="mt-16" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} aria-labelledby="problem">
           <h2 id="problem" className="font-serif text-2xl text-foreground sm:text-3xl">The Problem</h2>
-          <p className="mt-4 max-w-3xl leading-relaxed text-muted-foreground">{cs.problem}</p>
+          {cs.problem.split('\n\n').map((para, i) => (
+            <p key={i} className="mt-4 max-w-3xl leading-relaxed text-muted-foreground">{para}</p>
+          ))}
         </motion.section>
 
         {/* Solution */}
         <motion.section className="mt-16" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} aria-labelledby="solution">
           <h2 id="solution" className="font-serif text-2xl text-foreground sm:text-3xl">The Solution</h2>
-          <p className="mt-4 max-w-3xl leading-relaxed text-muted-foreground">{cs.solution}</p>
+          {cs.solution.split('\n\n').map((para, i) => (
+            <p key={i} className="mt-4 max-w-3xl leading-relaxed text-muted-foreground">{para}</p>
+          ))}
           {cs.solutionPoints && cs.solutionPoints.length > 0 && (
             <ul className="mt-4 max-w-3xl space-y-2" role="list">
               {cs.solutionPoints.map((point) => {
-                const match = point.match(/^(.+?)\s+(created|allowed|provided|designed|developed|built|implemented)\b/i);
+                const verbMatch = point.match(/^(.+?)\s+(created|allowed|provided|designed|developed|built|implemented)\b/i);
+                const colonMatch = !verbMatch ? point.match(/^(.+?):(.+)$/) : null;
                 return (
                   <li key={point} className="flex items-start gap-2">
                     <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-primary" aria-hidden="true" />
                     <span className="leading-relaxed text-muted-foreground">
-                      {match ? (
+                      {verbMatch ? (
                         <>
-                          <strong className="font-semibold text-foreground">{match[1]}</strong>{" "}
-                          {point.slice(match[1].length + 1)}
+                          <strong className="font-semibold text-foreground">{verbMatch[1]}</strong>{" "}
+                          {point.slice(verbMatch[1].length + 1)}
+                        </>
+                      ) : colonMatch ? (
+                        <>
+                          <strong className="font-semibold text-foreground">{colonMatch[1]}:</strong>
+                          {colonMatch[2]}
                         </>
                       ) : point}
                     </span>
@@ -213,7 +223,9 @@ const CaseStudyDetail = () => {
         {cs.aiEvolution && (
           <motion.section className="mt-16" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} aria-labelledby="ai-evolution">
             <h2 id="ai-evolution" className="font-serif text-2xl text-foreground sm:text-3xl">AI Roadmap</h2>
-            <p className="mt-4 max-w-3xl leading-relaxed text-muted-foreground">{cs.aiEvolution.intro}</p>
+            {cs.aiEvolution.intro.split('\n\n').map((para, i) => (
+              <p key={i} className="mt-4 max-w-3xl leading-relaxed text-muted-foreground">{para}</p>
+            ))}
             <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
               {cs.aiEvolution.cards.map((card) => (
                 <Card key={card.title} className="border-border/60">
