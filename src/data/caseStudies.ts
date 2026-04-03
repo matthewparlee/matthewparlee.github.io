@@ -3,6 +3,7 @@ import cleanEdit from "@/assets/clean-edit.png";
 import scenarioBank from "@/assets/scenario-bank.png";
 import cleanerImage from "@/assets/cleaner.png";
 import evaluatorImage from "@/assets/evaluator-case-study.jpg";
+import evaluatorPracticeActivity from "@/assets/evaluator-practice-activity.jpg";
 
 export interface CaseStudy {
   id: string;
@@ -127,6 +128,7 @@ export const caseStudies: CaseStudy[] = [
       "Performance Support Integration: To ensure sustainability, we synthesized complex legislation into visual infographics and performance support tools. These served as cognitive scaffolds during learning and high-utility job aids in the field. By offloading procedural memorization, evaluators could prioritize nuanced analysis and high-quality decision-making.",
       "Independent Practice: The final phase required learners to work independently, receiving raw claim documentation and evidence. Learners were required to document and reflect on their thinking throughout the process, justifying their final judgment through the lens of the legislative framework.",
     ],
+    solutionImage: { src: evaluatorPracticeActivity, alt: "Practice activity facilitator guide showing structured analysis exercises for evaluator training", caption: "Facilitator guide detailing structured practice activities for evidence analysis and decision-making." },
     process: [
       { phase: "Strategic Scoping & Alignment", description: "Facilitated conversations ensuring the core objectives remained stable even as the specific content was still being defined." },
       { phase: "Tiered Solutions", description: "Navigated unexpected changes by providing stakeholders with clear options, allowing for informed decision-making while maintaining project momentum." },
