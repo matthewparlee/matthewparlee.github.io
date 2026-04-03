@@ -3,6 +3,7 @@ import cleanEdit from "@/assets/clean-edit.png";
 import scenarioBank from "@/assets/scenario-bank.png";
 import cleanerImage from "@/assets/cleaner.png";
 import evaluatorImage from "@/assets/evaluator-case-study.jpg";
+import evaluatorPracticeActivity from "@/assets/evaluator-practice-activity.jpg";
 
 export interface CaseStudy {
   id: string;
