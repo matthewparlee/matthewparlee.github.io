@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 
-const SITE_URL = "https://matthewparlee.com";
+const SITE_URL = "https://matthewparlee.github.io";
 const DEFAULT_TITLE = "Matthew Parlee — Senior Learning Experience Designer";
 const DEFAULT_DESCRIPTION =
   "Portfolio of Matthew Parlee, a Senior Learning Experience Designer with 10+ years of experience crafting impactful learning solutions.";
