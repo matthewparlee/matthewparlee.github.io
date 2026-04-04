@@ -84,6 +84,7 @@ export const caseStudies: CaseStudy[] = [
       "Independent Practice: The final phase required learners to work independently, receiving raw claim documentation and evidence. Learners were required to document and reflect on their thinking throughout the process, justifying their final judgment through the lens of the legislative framework.",
     ],
     solutionImage: { src: evaluatorPracticeActivity, alt: "Practice activity facilitator guide showing structured analysis exercises for evaluator training", caption: "Facilitator guide detailing structured practice activities." },
+    processIntro: "This project existed against a backdrop of shifting content and compressed timelines. The core challenge was maintaining value-driven design while the project's scope, content, and SME resources remained in a state of constant change.",
     process: [
       { phase: "Strategic Scoping & Alignment", description: "Facilitated conversations ensuring the core objectives remained stable even as the specific content was still being defined." },
       { phase: "Tiered Solutions", description: "Navigated unexpected changes by providing stakeholders with clear options, allowing for informed decision-making while maintaining project momentum." },
