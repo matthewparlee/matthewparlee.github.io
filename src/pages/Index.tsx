@@ -103,6 +103,14 @@ const Index = () => {
               </motion.article>
             ))}
           </div>
+
+          <div className="mt-14 flex justify-center">
+            <Button asChild size="lg" className="gap-2 rounded-full px-8">
+              <Link to="/case-studies">
+                View Case Studies <ArrowRight className="h-4 w-4" />
+              </Link>
+            </Button>
+          </div>
         </div>
       </section>
     </main>
