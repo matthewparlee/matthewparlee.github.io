@@ -31,8 +31,8 @@ const App = () => (
           <Footer />
         </div>
       </BrowserRouter>
-    </TooltipProvider>
+      </TooltipProvider>
+    </ThemeProvider>
   </QueryClientProvider>
-);
 
 export default App;
