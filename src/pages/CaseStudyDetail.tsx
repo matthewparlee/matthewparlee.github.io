@@ -69,7 +69,7 @@ const CaseStudyDetail = () => {
           headline: cs.title,
           description: cs.teaser,
           author: { "@type": "Person", name: "Matthew Parlee" },
-          image: `https://matthewparlee.com${cs.coverImage}`,
+          image: `https://matthewparlee.github.io${cs.coverImage}`,
         }}
       />
       <article className="mx-auto max-w-[1100px] px-6">
