@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Linkedin } from "lucide-react";
 import { fadeUp } from "@/lib/animations";
+import SEO from "@/components/SEO";
 
 const Contact = () => {
   return (
