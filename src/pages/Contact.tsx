@@ -1,10 +1,16 @@
 import { motion } from "framer-motion";
 import { Linkedin } from "lucide-react";
 import { fadeUp } from "@/lib/animations";
+import SEO from "@/components/SEO";
 
 const Contact = () => {
   return (
     <main className="py-20 sm:py-28">
+      <SEO
+        title="Contact"
+        description="Get in touch with Matthew Parlee to discuss your learning experience design project."
+        path="/contact"
+      />
       <div className="mx-auto max-w-[1100px] px-6">
         <motion.div initial="hidden" animate="visible" variants={fadeUp}>
           <h1 className="font-serif text-4xl tracking-tight text-foreground sm:text-5xl">Get in Touch</h1>

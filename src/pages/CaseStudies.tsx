@@ -3,9 +3,15 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { caseStudies } from "@/data/caseStudies";
 import { fadeUpStaggered as fadeUp } from "@/lib/animations";
+import SEO from "@/components/SEO";
 
 const CaseStudies = () => (
   <main className="py-20 sm:py-28">
+    <SEO
+      title="Case Studies"
+      description="Deep dives into projects where instructional design solved real performance challenges."
+      path="/case-studies"
+    />
     <div className="mx-auto max-w-[1100px] px-6">
       <h1 className="font-serif text-4xl tracking-tight text-foreground sm:text-5xl">Case Studies</h1>
       <p className="mt-4 max-w-lg text-lg text-muted-foreground">

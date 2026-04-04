@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import Lightbox from "@/components/Lightbox";
 import { fadeUp } from "@/lib/animations";
+import SEO from "@/components/SEO";
 
 const CaseStudyDetail = () => {
   const { id } = useParams<{ id: string }>();
@@ -57,6 +58,20 @@ const CaseStudyDetail = () => {
 
   return (
     <main className="py-16 sm:py-24">
+      <SEO
+        title={cs.title}
+        description={cs.teaser}
+        path={`/case-studies/${cs.id}`}
+        type="article"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: cs.title,
+          description: cs.teaser,
+          author: { "@type": "Person", name: "Matthew Parlee" },
+          image: `https://matthewparlee.com${cs.coverImage}`,
+        }}
+      />
       <article className="mx-auto max-w-[1100px] px-6">
         {/* Breadcrumb */}
         <nav aria-label="Breadcrumb" className="mb-8 flex items-center gap-1 text-sm text-muted-foreground">

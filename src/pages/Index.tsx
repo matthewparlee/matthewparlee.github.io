@@ -4,6 +4,7 @@ import { ArrowRight, Compass, TrendingUp, FlaskConical } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import profpic from "@/assets/profpic.png";
 import { fadeUpStaggered as fadeUp } from "@/lib/animations";
+import SEO from "@/components/SEO";
 
 const principles = [
   { icon: Compass, title: "Context Changes Everything", description: "Every solution should be anchored in the specific context of the organization, as well as the daily decisions individuals must make to build toward measurable change." },
@@ -14,7 +15,7 @@ const principles = [
 const Index = () => {
   return (
     <main>
-      {/* Hero */}
+      <SEO path="/" />
       <section className="relative overflow-hidden py-24 sm:py-36" aria-labelledby="hero-heading">
         <div className="mx-auto max-w-[1100px] px-6">
           <motion.h1
