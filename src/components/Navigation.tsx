@@ -14,6 +14,7 @@ const navItems = [
 const Navigation = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const location = useLocation();
+  const { theme, setTheme } = useTheme();
 
   return (
     <header className="sticky top-0 z-40 border-b bg-background/90 backdrop-blur-md" role="banner">
