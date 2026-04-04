@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight, ChevronRight, Quote } from "lucide-react";
@@ -13,6 +13,10 @@ const CaseStudyDetail = () => {
   const { id } = useParams<{ id: string }>();
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]);
 
   const index = caseStudies.findIndex((cs) => cs.id === id);
   const cs = caseStudies[index];
