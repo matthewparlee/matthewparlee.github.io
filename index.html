@@ -2,6 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      // SPA redirect handler for GitHub Pages
+      (function () {
+        var q = window.location.search;
+        if (q.length > 2) {
+          var params = new URLSearchParams(q);
+          var p = params.get('p');
+          if (p) {
+            var url = '/' + p.replace(/&\/|&$/, '') +
+              (params.get('q') ? '?' + decodeURIComponent(params.get('q')) : '') +
+              window.location.hash;
+            window.history.replaceState(null, '', url);
+          }
+        }
+      })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- TODO: Set the document title to the name of your application -->
     <title>Matthew Parlee — Senior Learning Experience Designer</title>
