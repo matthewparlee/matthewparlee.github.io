@@ -72,6 +72,7 @@ const CaseStudyDetail = () => {
           image: `https://matthewparlee.com${cs.coverImage}`,
         }}
       />
+      <article className="mx-auto max-w-[1100px] px-6">
         {/* Breadcrumb */}
         <nav aria-label="Breadcrumb" className="mb-8 flex items-center gap-1 text-sm text-muted-foreground">
           <Link to="/case-studies" className="hover:text-foreground transition-colors">Case Studies</Link>
