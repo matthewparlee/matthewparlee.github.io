@@ -1,42 +1,44 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy to GitHub Pages
+name: Deploy Vite to Pages
 
 on:
   push:
     branches: ["main"]
+  workflow_dispatch:
 
 permissions:
   contents: read
   pages: write
   id-token: write
 
+env:
+  # This tells GitHub to use Node 24 immediately for all internal actions
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
-  build:
+  build_and_deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Node
-        uses: actions/setup-node@v6
+        uses: actions/checkout@v6 # Updated from v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v6 # Updated from v4
         with:
-          node-version: 24
+          node-version: 24          # Set to the newest LTS version
           cache: 'npm'
+
       - name: Install dependencies
-        run: npm ci
-      - name: Build
+        run: npm install
+
+      - name: Build project
         run: npm run build
-      - name: Upload Pages artifact
+
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist' # Vite builds to 'dist' by default
+          path: ./dist
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy
+      - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+     
