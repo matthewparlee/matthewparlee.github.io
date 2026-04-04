@@ -16,6 +16,7 @@ export interface CaseStudy {
   solution: string;
   solutionPoints?: string[];
   solutionImage?: { src: string; alt: string; caption: string };
+  processIntro?: string;
   process: { phase: string; description: string; image?: { src: string; alt: string; caption: string } }[];
   results: { metrics: string[]; quote?: string; quoteAuthor?: string };
   aiEvolution?: { intro: string; cards: { title: string; points: string[] }[] };
