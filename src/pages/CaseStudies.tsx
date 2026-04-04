@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { caseStudies } from "@/data/caseStudies";
 import { fadeUpStaggered as fadeUp } from "@/lib/animations";
+import SEO from "@/components/SEO";
 
 const CaseStudies = () => (
   <main className="py-20 sm:py-28">
