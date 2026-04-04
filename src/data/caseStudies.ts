@@ -4,6 +4,8 @@ import scenarioBank from "@/assets/scenario-bank.png";
 import cleanerImage from "@/assets/cleaner.png";
 import evaluatorImage from "@/assets/evaluator-case-study.jpg";
 import evaluatorPracticeActivity from "@/assets/evaluator-practice-activity.jpg";
+import digitalStrategyCover from "@/assets/case-study-digital-strategy.jpg";
+import assessmentImage from "@/assets/case-study-assessment.jpg";
 
 export interface CaseStudy {
   id: string;
