@@ -14,6 +14,10 @@ const CaseStudyDetail = () => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]);
+
   const index = caseStudies.findIndex((cs) => cs.id === id);
   const cs = caseStudies[index];
 
