@@ -30,7 +30,7 @@ export const caseStudies: CaseStudy[] = [
     title: "Enabling Financial Advisors for Digital Transformation",
     teaser: "Designed scenario-based learning experiences that empowered financial advisors to integrate a digital strategy into client relationships without disrupting the human touch.",
     tags: ["Scenario-Based Learning", "Digital Transformation", "Financial Services"],
-    coverImage: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&q=80",
+    coverImage: digitalStrategyCover,
     overview: "To stay competitive in an evolving landscape, a multinational financial services provider pivoted toward a digital strategy for client self-enablement. As Senior Instructional Designer, this project empowered financial advisors to integrate this evolving approach into their existing client relationships without disrupting the \"human touch.\"",
     problem: "The financial advisors and other client-facing roles needed opportunities to gain confidence in this new approach and the associated digital platforms. The client needed to ensure advisors could find organic, meaningful opportunities to showcase the digital enablement opportunities within the context of their customers' financial priorities.",
     solution: "A Scenario-Based Learning experience empowered advisors to bridge the gap between digital self-serve tools and personalized advice.",
