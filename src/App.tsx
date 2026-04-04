@@ -18,6 +18,7 @@ const App = () => (
     <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
       <TooltipProvider>
       <BrowserRouter>
+        <ScrollToTop />
         <div className="flex min-h-screen flex-col">
           <Navigation />
           <div className="flex-1">
