@@ -1,10 +1,6 @@
 import { motion } from "framer-motion";
 import { Linkedin } from "lucide-react";
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" as const } },
-};
+import { fadeUp } from "@/lib/animations";
 
 const Contact = () => {
   return (

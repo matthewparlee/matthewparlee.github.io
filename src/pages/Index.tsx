@@ -3,11 +3,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Compass, TrendingUp, FlaskConical } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import profpic from "@/assets/profpic.png";
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: (i: number) => ({ opacity: 1, y: 0, transition: { delay: i * 0.15, duration: 0.6, ease: "easeOut" as const } }),
-};
+import { fadeUpStaggered as fadeUp } from "@/lib/animations";
 
 const principles = [
   { icon: Compass, title: "Context Changes Everything", description: "My approach anchors every solution in the specific context of the organization, as well as the daily decisions individuals must make to build toward measurable change." },

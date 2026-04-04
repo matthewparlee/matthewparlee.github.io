@@ -7,11 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import Lightbox from "@/components/Lightbox";
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" as const } },
-};
+import { fadeUp } from "@/lib/animations";
 
 const CaseStudyDetail = () => {
   const { id } = useParams<{ id: string }>();

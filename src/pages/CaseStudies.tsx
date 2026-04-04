@@ -2,11 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { caseStudies } from "@/data/caseStudies";
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 24 },
-  visible: (i: number) => ({ opacity: 1, y: 0, transition: { delay: i * 0.1, duration: 0.5, ease: "easeOut" as const } }),
-};
+import { fadeUpStaggered as fadeUp } from "@/lib/animations";
 
 const CaseStudies = () => (
   <main className="py-20 sm:py-28">
