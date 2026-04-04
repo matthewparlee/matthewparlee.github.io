@@ -15,7 +15,7 @@ const principles = [
 const Index = () => {
   return (
     <main>
-      {/* Hero */}
+      <SEO path="/" />
       <section className="relative overflow-hidden py-24 sm:py-36" aria-labelledby="hero-heading">
         <div className="mx-auto max-w-[1100px] px-6">
           <motion.h1

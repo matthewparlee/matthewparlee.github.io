@@ -58,7 +58,20 @@ const CaseStudyDetail = () => {
 
   return (
     <main className="py-16 sm:py-24">
-      <article className="mx-auto max-w-[1100px] px-6">
+      <SEO
+        title={cs.title}
+        description={cs.teaser}
+        path={`/case-studies/${cs.id}`}
+        type="article"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: cs.title,
+          description: cs.teaser,
+          author: { "@type": "Person", name: "Matthew Parlee" },
+          image: `https://matthewparlee.com${cs.coverImage}`,
+        }}
+      />
         {/* Breadcrumb */}
         <nav aria-label="Breadcrumb" className="mb-8 flex items-center gap-1 text-sm text-muted-foreground">
           <Link to="/case-studies" className="hover:text-foreground transition-colors">Case Studies</Link>
