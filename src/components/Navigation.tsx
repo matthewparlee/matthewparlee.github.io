@@ -29,7 +29,7 @@ const Navigation = () => {
                 to={item.path}
                 className={cn(
                   "text-sm font-medium transition-colors hover:text-primary",
-                  location.pathname === item.path ? "text-primary" : "text-muted-foreground"
+                  location.pathname === item.path || location.pathname.startsWith(item.path + "/") ? "text-primary" : "text-muted-foreground"
                 )}
               >
                 {item.label}
