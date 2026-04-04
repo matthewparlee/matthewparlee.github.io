@@ -66,7 +66,7 @@ const Lightbox = ({ images, currentIndex, open, onOpenChange, onNavigate }: Ligh
               src={image.src}
               alt={image.alt}
               className="max-h-[70vh] rounded-lg object-contain"
-              loading="lazy"
+              loading="eager"
             />
             {currentIndex < images.length - 1 && (
               <Button
