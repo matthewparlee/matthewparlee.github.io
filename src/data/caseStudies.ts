@@ -130,7 +130,7 @@ export const caseStudies: CaseStudy[] = [
     process: [
       { phase: "Stakeholder Collaboration", description: "Partnered with subject matter experts from the client's professional division to translate their disinfection expertise into digital learning opportunities." },
       { phase: "Program and Course Design", description: "Created detailed storyboards and oversaw the production of multimedia content to demonstrate advanced surface disinfection and product application.", image: { src: cleanEdit, alt: "Interactive scenario-based course design for disinfection training", caption: "Detailed scenarios to practice real-world application." } },
-      { phase: "Assessment Development", description: "Designed a rigorous, assessment-based training framework to ensure learners met high-quality competency standards.", image: { src: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80", alt: "Assessment framework interface", caption: "Competency-based assessment framework for certificate program" } },
+      { phase: "Assessment Development", description: "Designed a rigorous, assessment-based training framework to ensure learners met high-quality competency standards.", image: { src: assessmentImage, alt: "Assessment framework interface", caption: "Competency-based assessment framework for certificate program" } },
       { phase: "Standards Alignment", description: "Developed all content in strict accordance with a national credentialing standard, which is the standard practice for certificate programs." },
     ],
     results: { metrics: [] },
