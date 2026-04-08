@@ -70,7 +70,7 @@ const Index = () => {
               Hi, I'm Matthew! I'm a Senior Learning Experience Designer focused on crafting customized learning experiences and designing meaningful solutions.
             </p>
             <p className="mt-4 leading-relaxed text-muted-foreground">
-              To be honest, I've always found it a bit tricky to talk about my career in the first person. In L&D, successful projects are always a team effort: a "we" rather than an "I." The best work is always a collaboration with leadership, learning designers, and the people on the ground doing the work. This approach makes sure <em className="font-medium">our</em> solutions are proactive and fit into the flow of work and the lived reality of the business.
+              To be honest, I've always found it a bit tricky to talk about my career in the first person. In L&D, successful projects are always a team effort: a "we" rather than an "I." The best work is always a collaboration with leadership, learning designers, and the people on the ground doing the work. To be honest, I've always found it a bit tricky to talk about my career in the first person. In L&D, successful projects are always a team effort: a "we" rather than an "I." The best work is always a collaboration with leadership, learning designers, and the people on the ground doing the work. This approach makes sure <em className="font-medium">our</em> solutions are proactive and match the lived reality of the business.
             </p>
           </div>
         </div>
