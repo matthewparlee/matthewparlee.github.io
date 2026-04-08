@@ -31,8 +31,8 @@ export const caseStudies: CaseStudy[] = [
     teaser: "Designed scenario-based learning experiences that empowered financial advisors to integrate a digital strategy into client relationships without disrupting the human touch.",
     tags: ["Scenario-Based Learning", "Digital Transformation", "Financial Services"],
     coverImage: digitalStrategyCover,
-    overview: "To stay competitive in an evolving landscape, a multinational financial services provider pivoted toward a digital strategy for client self-enablement. As Senior Instructional Designer, this project empowered financial advisors to integrate this evolving approach into their existing client relationships without disrupting the \"human touch.\"",
-    problem: "The financial advisors and other client-facing roles needed opportunities to gain confidence in this new approach and the associated digital platforms. The client needed to ensure advisors could find organic, meaningful opportunities to showcase the digital enablement opportunities within the context of their customers' financial priorities.",
+    overview: "To stay competitive in an evolving landscape, a multinational financial services provider pivoted toward a digital strategy for client self-enablement. As Senior Instructional Designer, this project empowered financial advisors to integrate this evolving approach into their existing client relationships.",
+    problem: "The financial advisors needed opportunities to gain confidence in this new approach and the associated digital platforms. The client needed to ensure advisors could find organic, meaningful opportunities to showcase the digital enablement opportunities within the context of their customers' financial priorities.",
     solution: "A Scenario-Based Learning experience empowered advisors to bridge the gap between digital self-serve tools and personalized advice.",
     solutionImage: { src: scenarioBank, alt: "Scenario-based learning interaction between advisor and client", caption: "Scenario-based learning simulation for advisor-client interactions" },
     solutionPoints: [
@@ -53,7 +53,7 @@ export const caseStudies: CaseStudy[] = [
         {
           title: "Adaptive Challenge Levels",
           points: [
-            "Generative Persona Engines can create thousands of unique client variations instead of a one-size-fits-all simulation. By tracking an advisor's previous performance, the AI can increase the complexity of the client's objections. If an advisor excels at \"Retirement Planning\" scenarios, the AI can pivot the client's persona to be more skeptical or technologically averse to push the learner's boundaries.",
+            "Generative Persona Engines can create unique client variations instead of a one-size-fits-all simulation. By tracking an advisor's previous performance, the AI can increase the complexity of the client's objections. If an advisor excels at retirement planning scenarios, the AI can pivot the client's persona to be more skeptical or technologically averse to push the learner's boundaries.",
           ],
         },
         {
