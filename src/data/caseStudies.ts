@@ -135,7 +135,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     results: { metrics: [] },
     aiEvolution: {
-      intro: "If I were to lead this project today, I would leverage a Human-AI Collaborative Strategy to move from a static certificate program to a more individualized and adaptive learning ecosystem.",
+      intro: "If I were to lead this project today, I would move toward a more individualized and adaptive learning program.",
       cards: [
         {
           title: "Individualized Learning Paths",
@@ -146,7 +146,7 @@ export const caseStudies: CaseStudy[] = [
         {
           title: "Adaptive Real-Time Support",
           points: [
-            "An AI \"Knowledge Assistant\" would be embedded in the mobile learning app, allowing workers to ask specific questions on-site (e.g., \"What is the dwell time for this product on a non-porous surface?\") and receive immediate, accredited answers.",
+            "A mobile AI assistant would allow workers to ask specific questions on-site (e.g., \"What is the dwell time for this product on a non-porous surface?\") and receive immediate, accredited answers.",
           ],
         },
         {
