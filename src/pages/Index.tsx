@@ -82,9 +82,6 @@ const Index = () => {
           <h2 id="philosophy-heading" className="text-center font-serif text-3xl tracking-tight text-foreground sm:text-4xl">
             Design Philosophy
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-center text-muted-foreground">
-            Three principles guide every project I take on, ensuring that learning solutions always have a solid foundation.
-          </p>
           <div className="mt-14 grid gap-8 sm:grid-cols-3">
             {principles.map((p, i) => (
               <motion.article
