@@ -53,7 +53,7 @@ export const caseStudies: CaseStudy[] = [
         {
           title: "Adaptive Challenge Levels",
           points: [
-            "Generative Persona Engines can create unique client variations instead of a one-size-fits-all simulation. By tracking an advisor's previous performance, the AI can increase the complexity of the client's objections. If an advisor excels at retirement planning scenarios, the AI can pivot the client's persona to be more skeptical or technologically averse to push the learner's boundaries.",
+            "By leveraging AI, we can design adaptive client personas that respond to an advisor's performance rather than using a one-size-fits-all simulation.\u00a0\n\n\nFor instance, if a learner excels at retirement planning, I can increase the client's skepticism or pivot to a more fitting challenge.",
           ],
         },
         {
