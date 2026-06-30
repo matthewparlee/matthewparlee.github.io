@@ -65,7 +65,7 @@ export const caseStudies: CaseStudy[] = [
         {
           title: "Sentiment Analysis",
           points: [
-            "The program can pivot to include Generative Roleplay using LLMs, allowing advisors to practice natural language conversations. Since the core goal is maintaining the human connection while introducing digital tools, AI-powered sentiment analysis can be used to score the \"warmth\" or \"relatability\" of the advisor's response.",
+            "The program can pivot to include Generative Roleplay using LLMs, allowing advisors to practice natural language conversations.\u00a0\n\n\nSince the core goal is maintaining the human connection while introducing digital tools, AI-powered sentiment analysis can be used to score the \"warmth\" or \"relatability\" of the advisor's response based on the company's specific values or metrics.",
           ],
         },
       ],
