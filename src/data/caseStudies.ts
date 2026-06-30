@@ -140,7 +140,7 @@ export const caseStudies: CaseStudy[] = [
         {
           title: "Individualized Learning Paths",
           points: [
-            "We would design and use a diagnostic tool or central learner dashboard to help us evaluate a learner's existing knowledge and track their progress.\u00a0\n\n\n If a worker is already an expert in office cleaning but new to food surface protocols, we would dynamically adjust the program to focus on the knowledge gaps.",
+            "We would design and use a diagnostic tool or central learner dashboard to help us evaluate a learner's existing knowledge and track their progress.\u00a0\n\n If a worker is already an expert in office cleaning but new to food surface protocols, we would dynamically adjust the program to focus on the knowledge gaps.",
           ],
         },
         {
