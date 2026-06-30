@@ -100,7 +100,7 @@ export const caseStudies: CaseStudy[] = [
         {
           title: "AI-Supported Simulations",
           points: [
-            "Because traditional instructor-led training often exists as an isolated event, learners can struggle to transfer skills to the daily workflow.\u00a0\n\n\nTo counter the forgetting curve, we can leverage AI-supported simulations to engage spaced repetition. This will support active retrieval, contextual application, and provide guided feedback opportunities on a continuing basis outside the initial learning event.",
+            "Because traditional instructor-led training often exists as an isolated event, learners can struggle to transfer skills to the daily workflow.\u00a0\n\nTo counter the forgetting curve, we can leverage AI-supported simulations to engage spaced repetition. This will support active retrieval, contextual application, and provide guided feedback opportunities on a continuing basis outside the initial learning event.",
           ],
         },
         {
@@ -112,7 +112,7 @@ export const caseStudies: CaseStudy[] = [
         {
           title: "Dynamic Program Adjustments",
           points: [
-            "By leveraging real-time performance data from both simulations and real-world performance, we can proactively identify performance gaps.\u00a0\n\n\nThis data-driven loop allows for the dynamic adjustment of ILT content, job aids, and scenarios, ensuring that training content evolves as rapidly as the legislative and operational landscape.",
+            "By leveraging real-time performance data from both simulations and real-world performance, we can proactively identify performance gaps.\u00a0\n\nThis data-driven loop allows for the dynamic adjustment of ILT content, job aids, and scenarios, ensuring that training content evolves as rapidly as the legislative and operational landscape.",
           ],
         },
       ],
