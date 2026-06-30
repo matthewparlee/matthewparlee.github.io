@@ -59,7 +59,7 @@ export const caseStudies: CaseStudy[] = [
         {
           title: "Predictive Analytics",
           points: [
-            "AI can analyze performance data (from both real-world call data and/or simulations) to automatically flag specific moments of friction where most advisors struggle to pivot to digital. This data can be used to refine the learning program to address real-world performance gaps.",
+            "We can use AI to help us analyze performance data (from both real-world call data and/or simulations) to automatically flag specific moments of friction where most advisors struggle to pivot to digital.\u00a0\n\n\nThis data can be used to refine the learning program to address real-world performance gaps.",
           ],
         },
         {
