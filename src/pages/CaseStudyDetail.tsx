@@ -253,7 +253,7 @@ const CaseStudyDetail = () => {
                   <CardContent>
                     <ul className="space-y-3" role="list">
                       {card.points.map((point) => (
-                        <li key={point} className="text-sm leading-relaxed text-muted-foreground">
+                        <li key={point} className="text-sm leading-relaxed text-muted-foreground whitespace-pre-wrap">
                           {point}
                         </li>
                       ))}
