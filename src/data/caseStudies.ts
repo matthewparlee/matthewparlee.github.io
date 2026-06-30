@@ -158,7 +158,7 @@ export const caseStudies: CaseStudy[] = [
         {
           title: "Predictive Performance Analytics",
           points: [
-            "By integrating AI with the client's operational data, we could correlate training with actual facility health metrics. This enables a more data-driven program, and a refined measurement and evaluation strategy.",
+            "By integrating the diagnostic tool or learner dashboard with the client's operational data, we would correlate training with actual facility health metrics. This enables a more data-driven program, and a refined measurement and evaluation strategy.",
           ],
         },
       ],
