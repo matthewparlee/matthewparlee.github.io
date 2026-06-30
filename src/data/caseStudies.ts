@@ -140,25 +140,25 @@ export const caseStudies: CaseStudy[] = [
         {
           title: "Individualized Learning Paths",
           points: [
-            "We would design and use a diagnostic tool or central learner dashboard to help us evaluate a learner's existing knowledge and track their progress.\u00a0\n\n If a worker is already an expert in office cleaning but new to food surface protocols, we would dynamically adjust the program to focus on the knowledge gaps.",
+            "We can design and use a diagnostic tool or central learner dashboard to help us evaluate a learner's existing knowledge and track their progress.\u00a0\n\n If a worker is already an expert in office cleaning but new to food surface protocols, we can dynamically adjust the program to focus on the knowledge gaps.",
           ],
         },
         {
           title: "Adaptive Real-Time Support",
           points: [
-            "A mobile AI assistant would allow workers to ask specific questions on-site (e.g., \"What is the dwell time for this product on a non-porous surface?\") and receive immediate, accredited answers.",
+            "A mobile AI assistant can allow workers to ask specific questions on-site (e.g., \"What is the dwell time for this product on a non-porous surface?\") and receive immediate, accredited answers.",
           ],
         },
         {
           title: "Advanced Assessment & Practical Feedback",
           points: [
-            "Instead of multiple-choice questions, learners would engage with AI-simulated scenarios. The AI product would be designed to evaluate their decision-making, provide context-based feedback, and apply focused updates to their individualized learning path.",
+            "Instead of multiple-choice questions, learners can engage with AI-simulated scenarios. The AI product would be designed to help us evaluate their decision-making, provide context-based feedback, and apply focused updates to their individualized learning path.",
           ],
         },
         {
           title: "Predictive Performance Analytics",
           points: [
-            "By integrating the diagnostic tool or learner dashboard with the client's operational data, we would correlate training with actual facility health metrics. This enables a more data-driven program, and a refined measurement and evaluation strategy.",
+            "By integrating the diagnostic tool or learner dashboard with the client's operational data, we can correlate training with actual facility health metrics. This enables a more data-driven program, and a refined measurement and evaluation strategy.",
           ],
         },
       ],
