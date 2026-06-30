@@ -53,19 +53,19 @@ export const caseStudies: CaseStudy[] = [
         {
           title: "Adaptive Challenge Levels",
           points: [
-            "By leveraging AI, we can design adaptive client personas that respond to an advisor's performance rather than using a one-size-fits-all simulation.\u00a0\n\n\nFor instance, if a learner excels at retirement planning, I can increase the client's skepticism or pivot to a more fitting challenge.",
+            "By leveraging AI, we can design adaptive client personas that respond to an advisor's performance rather than using a one-size-fits-all simulation.\u00a0\n\nFor instance, if a learner excels at retirement planning, I can increase the client's skepticism or pivot to a more fitting challenge.",
           ],
         },
         {
           title: "Predictive Analytics",
           points: [
-            "We can use AI to help us analyze performance data (from both real-world call data and/or simulations) to automatically flag specific moments of friction where most advisors struggle to pivot to digital.\u00a0\n\n\nThis data can be used to refine the learning program to address real-world performance gaps.",
+            "We can use AI to help us analyze performance data (from both real-world call data and/or simulations) to automatically flag specific moments of friction where most advisors struggle to pivot to digital.\u00a0\n\nThis data can be used to refine the learning program to address real-world performance gaps.",
           ],
         },
         {
           title: "Sentiment Analysis",
           points: [
-            "The program can pivot to include Generative Roleplay using LLMs, allowing advisors to practice natural language conversations.\u00a0\n\n\nSince the core goal is maintaining the human connection while introducing digital tools, AI-powered sentiment analysis can be used to score the \"warmth\" or \"relatability\" of the advisor's response based on the company's specific values or metrics.",
+            "The program can pivot to include Generative Roleplay using LLMs, allowing advisors to practice natural language conversations.\u00a0\n\nSince the core goal is maintaining the human connection while introducing digital tools, AI-powered sentiment analysis can be used to score the \"warmth\" or \"relatability\" of the advisor's response based on the company's specific values or metrics.",
           ],
         },
       ],
