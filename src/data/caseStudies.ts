@@ -140,7 +140,7 @@ export const caseStudies: CaseStudy[] = [
         {
           title: "Individualized Learning Paths",
           points: [
-            "An AI-powered diagnostic tool would evaluate a learner's existing knowledge. If a worker is already an expert in office cleaning but new to food surface protocols, the AI dynamically adjusts the curriculum to focus on the knowledge gaps.",
+            "We would design and use a diagnostic tool or central learner dashboard to help us evaluate a learner's existing knowledge and track their progress.\u00a0\n\n\n If a worker is already an expert in office cleaning but new to food surface protocols, we would dynamically adjust the program to focus on the knowledge gaps.",
           ],
         },
         {
@@ -152,7 +152,7 @@ export const caseStudies: CaseStudy[] = [
         {
           title: "Advanced Assessment & Practical Feedback",
           points: [
-            "Instead of multiple-choice questions, learners would engage with AI-simulated scenarios. The AI would evaluate their decision-making, provide context-based feedback, and apply focused updates to their individualized learning path.",
+            "Instead of multiple-choice questions, learners would engage with AI-simulated scenarios. The AI product would be designed to evaluate their decision-making, provide context-based feedback, and apply focused updates to their individualized learning path.",
           ],
         },
         {
